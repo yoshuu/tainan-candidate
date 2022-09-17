@@ -22,14 +22,14 @@ header .container .navbar {
   height: 100%;
 }
 
-.nav-link {
+.container .navbar-expand-lg .navbar-nav .nav-link {
   font-family: Noto Sans TC;
   font-weight: 700;
   font-size: 18px;
-  padding: 15px 20px;
   color: black;
+  padding: 15px 20px;
 }
-.nav-link:hover {
+.container .navbar-expand-lg .navbar-nav .nav-link:hover {
   background-color: #30363a;
   color: white;
 }
@@ -42,8 +42,16 @@ header {
   max-width: 1920px;
 }
 
+main .container {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: left 100px;
+  background-image: url("../images/kiang2.png");
+}
+
 body {
   background-color: #50a5a4;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

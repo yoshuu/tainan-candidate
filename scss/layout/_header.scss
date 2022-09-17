@@ -22,13 +22,12 @@ header .container .navbar {
     height: 100%;
   }
 }
-
-.nav-link {
+.container .navbar-expand-lg .navbar-nav .nav-link {
   font-family: Noto Sans TC;
   font-weight: 700;
   font-size: 18px;
-  padding: 15px 20px;
   color: black;
+  padding: 15px 20px;
 
   &:hover {
     background-color: #30363a;
