@@ -31,7 +31,7 @@ header .container .navbar {
   }
 }
 
-.nav-link {
+.container .navbar-expand-lg .navbar-nav .nav-link {
   font-family: Noto Sans TC;
   font-weight: 700;
   font-size: 18px;

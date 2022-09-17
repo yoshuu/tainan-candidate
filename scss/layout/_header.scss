@@ -19,7 +19,6 @@ header .container .navbar {
     height: 100%;
   }
 }
-
 .candidate-logo {
   width: 130px;
 }
@@ -29,7 +28,7 @@ header .container .navbar {
     display: inline-block;
   }
 }
-.nav-link {
+.container .navbar-expand-lg .navbar-nav .nav-link {
   font-family: Noto Sans TC;
   font-weight: 700;
   font-size: 18px;
