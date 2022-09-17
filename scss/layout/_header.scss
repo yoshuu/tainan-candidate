@@ -1,0 +1,10 @@
+@use "../utility";
+
+header .container .navbar {
+  background-color: utility.$header;
+  padding: 10px;
+}
+
+header {
+  background-color: utility.$header;
+}

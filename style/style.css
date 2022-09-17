@@ -1,3 +1,18 @@
+header .container .navbar {
+  background-color: #f4f4ee;
+  padding: 10px;
+}
 
+header {
+  background-color: #f4f4ee;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+body {
+  background-color: #50a5a4;
+}
 
 /*# sourceMappingURL=style.css.map */
