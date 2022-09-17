@@ -1,6 +1,37 @@
 header .container .navbar {
   background-color: #f4f4ee;
-  padding: 10px;
+  padding: 10px 43px;
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+.candidate-logo {
+  width: 130px;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  height: 56px;
+}
+.navbar-brand img {
+  object-fit: contain;
+  height: 100%;
+}
+
+.nav-link {
+  font-family: Noto Sans TC;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 15px 20px;
+  color: black;
+}
+.nav-link:hover {
+  background-color: #30363a;
+  color: white;
 }
 
 header {
