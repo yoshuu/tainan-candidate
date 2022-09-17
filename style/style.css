@@ -1,3 +1,33 @@
+.declaration {
+  width: 880px;
+  border: 10px solid #a7ced4;
+  background-color: #e3eaea;
+  position: relative;
+  line-height: 23.17px;
+  font-family: Noto Sans TC;
+}
+.declaration .oneTape {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+.declaration .twoTape {
+  position: absolute;
+  bottom: -30px;
+  right: -40px;
+}
+.declaration .content {
+  padding: 40px;
+}
+.declaration .content h2 {
+  margin-bottom: 24px;
+  font-size: 26px;
+}
+.declaration .content p {
+  margin: 0;
+  font-size: 16px;
+}
+
 header .container .navbar {
   background-color: #f4f4ee;
   padding: 10px 43px;
@@ -90,9 +120,11 @@ main .container {
   max-width: 1920px;
 }
 
+
 main .container {
   height: 100vh;
 }
+
 
 body {
   background-color: #50a5a4;
