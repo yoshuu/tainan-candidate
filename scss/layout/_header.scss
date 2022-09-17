@@ -7,9 +7,6 @@ header .container .navbar {
 .navbar-collapse {
   justify-content: end;
 }
-.candidate-logo {
-  width: 130px;
-}
 
 .navbar-brand {
   margin: 0;
@@ -23,6 +20,15 @@ header .container .navbar {
   }
 }
 
+.candidate-logo {
+  width: 130px;
+}
+.party-logo {
+  display: none;
+  @media (min-width: 992px) {
+    display: inline-block;
+  }
+}
 .nav-link {
   font-family: Noto Sans TC;
   font-weight: 700;
