@@ -1,0 +1,35 @@
+@use "../utility";
+
+.declaration {
+  width: 880px;
+  border: 10px solid utility.$secondary-middle;
+  background-color: utility.$secondary-light;
+  position: relative;
+  line-height: 23.17px;
+  font-family: Noto Sans TC;
+
+  .oneTape {
+    position: absolute;
+    top: -30px;
+    left: -40px;
+  }
+
+  .twoTape {
+    position: absolute;
+    bottom: -30px;
+    right: -40px;
+  }
+
+  .content {
+    padding: 40px;
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: 26px;
+    }
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+}
