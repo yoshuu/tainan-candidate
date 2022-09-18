@@ -168,12 +168,22 @@ header {
 }
 
 main .container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-content {
+.container {
+  max-width: 1920px;
+}
+
+body {
+  background-color: #50a5a4;
+  height: 100vh;
+}
+
+.front-page-container {
   position: relative;
   flex-basis: 1641px;
   display: flex;
@@ -206,13 +216,78 @@ main .container {
   flex-basis: 1066px;
 }
 
-.container {
-  max-width: 1920px;
+.tainan-three {
+  display: flex;
+  justify-content: center;
+}
+.tainan-three__outer-circle {
+  position: relative;
+  transform: translateY(48px);
+  width: 1175px;
+  height: 1175px;
+  border-radius: 50%;
+  background-color: #a7ced4;
+}
+.tainan-three__outer-circle:hover .people-name {
+  transform: translateY(3px);
+}
+.tainan-three__inner-circle {
+  position: absolute;
+  top: 32.28px;
+  left: 32.28px;
+  width: 1109.36px;
+  height: 1109.36px;
+  border-radius: 50%;
+  background-color: #e3eaea;
+}
+.tainan-three__people {
+  position: absolute;
+  top: 359.99px;
+  left: 137.47px;
+  height: 587px;
+  width: 857px;
 }
 
-main .container {
-  height: 100vh;
+
+.tainan-three-map-button {
+  position: absolute;
+  left: 1523px;
+  top: 158px;
 }
+
+.tainan-people-party {
+  height: 300px;
+  position: absolute;
+  top: 59.18px;
+  left: 385px;
+}
+.tainan-people-party img {
+  height: 100%;
+}
+
+.people-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 126.26px;
+  height: 56.04px;
+  position: absolute;
+}
+
+.kiang-name {
+  left: 828.6px;
+  top: 798.01px;
+}
+
+.kuo-name {
+  left: 497.8px;
+  top: 718.1px;
+}
+
+.ping-name {
+  left: 112.49px;
+  top: 803.9px;
+
 
 body {
   background-color: #50a5a4;

@@ -1,38 +1,8 @@
+
 main .container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.main-content {
-  position: relative;
-  flex-basis: 1641px;
-  display: flex;
-  justify-content: space-between;
-  gap: 178px;
-}
-
-.candidate-image {
-  align-self: flex-end;
-  flex-basis: 397px;
-  img {
-    object-fit: contain;
-    height: 100%;
-  }
-}
-
-.candidate-name {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 200px;
-  top: 670px;
-  img {
-    width: 100%;
-  }
-}
-
-.candidate-map {
-  align-self: center;
-  flex-basis: 1066px;
-}
