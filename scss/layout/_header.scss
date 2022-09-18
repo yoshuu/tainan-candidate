@@ -7,9 +7,6 @@ header .container .navbar {
 .navbar-collapse {
   justify-content: end;
 }
-.candidate-logo {
-  width: 130px;
-}
 
 .navbar-brand {
   margin: 0;
@@ -20,6 +17,15 @@ header .container .navbar {
   img {
     object-fit: contain;
     height: 100%;
+  }
+}
+.candidate-logo {
+  width: 130px;
+}
+.party-logo {
+  display: none;
+  @media (min-width: 992px) {
+    display: inline-block;
   }
 }
 .container .navbar-expand-lg .navbar-nav .nav-link {
