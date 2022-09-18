@@ -1,3 +1,18 @@
+.map-box {
+  background-image: url(../../images/mapButton.png);
+  width: 245px;
+  height: 215px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.map-box:hover {
+  background-image: url(../../images/mapButtonHover.png);
+}
+.map-box .map-button {
+  display: block;
+  line-height: 215px;
+}
+
 .declaration {
   width: 880px;
   border: 10px solid #a7ced4;
