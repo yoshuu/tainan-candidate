@@ -1,0 +1,59 @@
+@use "../utility";
+
+.popuping {
+  width: 760px;
+  font-family: Noto Sans TC;
+
+  header {
+    height: 60px;
+    background-color: utility.$secondary-dark;
+    position: relative;
+
+    h2 {
+      margin: 0;
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+
+  .close {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../images/Vector.png);
+    background-size: 100%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+  }
+
+  main {
+    padding: 20px 40px;
+    background-color: #fff;
+
+    .people {
+      width: 200px;
+      height: 195px;
+      float: left;
+      margin-right: 16px;
+    }
+
+    h3 {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+
+    p {
+      line-height: 21.27px;
+      font-size: 14px;
+    }
+
+    .facebook-button {
+      margin-left: 219px;
+    }
+  }
+}

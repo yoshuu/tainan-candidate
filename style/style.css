@@ -13,6 +13,31 @@
   line-height: 215px;
 }
 
+.facebook-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 242px;
+  height: 41px;
+  background-color: #1877f2;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 41px;
+  border: none;
+}
+.facebook-button img {
+  padding-left: 6px;
+}
+.facebook-button .facebook-text {
+  margin: 0;
+  padding-right: 17px;
+  font-family: Noto Sans TC;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.17px;
+}
+
 .declaration {
   width: 880px;
   border: 10px solid #a7ced4;
@@ -41,6 +66,56 @@
 .declaration .content p {
   margin: 0;
   font-size: 16px;
+}
+
+.popuping {
+  width: 760px;
+  font-family: Noto Sans TC;
+}
+.popuping header {
+  height: 60px;
+  background-color: #8dc1c7;
+  position: relative;
+}
+.popuping header h2 {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+.popuping .close {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../images/Vector.png);
+  background-size: 100%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+.popuping main {
+  padding: 20px 40px;
+  background-color: #fff;
+}
+.popuping main .people {
+  width: 200px;
+  height: 195px;
+  float: left;
+  margin-right: 16px;
+}
+.popuping main h3 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+.popuping main p {
+  line-height: 21.27px;
+  font-size: 14px;
+}
+.popuping main .facebook-button {
+  margin-left: 219px;
 }
 
 header .container .navbar {
@@ -136,7 +211,7 @@ body {
   width: 100%;
 }
 
-.candidate-information {
+.candidate-map {
   align-self: center;
   flex-basis: 1066px;
 }
@@ -172,6 +247,7 @@ body {
   height: 587px;
   width: 857px;
 }
+
 
 .tainan-three-map-button {
   position: absolute;
@@ -211,6 +287,11 @@ body {
 .ping-name {
   left: 112.49px;
   top: 803.9px;
+
+
+body {
+  background-color: #50a5a4;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
