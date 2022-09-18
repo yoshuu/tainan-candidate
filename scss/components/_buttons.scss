@@ -1,3 +1,5 @@
+@use "../utility";
+
 .map-box {
   background-image: url(../../images/mapButton.png);
   width: 245px;
@@ -11,5 +13,31 @@
   .map-button {
     display: block;
     line-height: 215px;
+  }
+}
+
+.facebook-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 242px;
+  height: 41px;
+  background-color: utility.$facebook;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 41px;
+  border: none;
+
+  img {
+    padding-left: 6px;
+  }
+  .facebook-text {
+    margin: 0;
+    padding-right: 17px;
+    font-family: Noto Sans TC;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.17px;
   }
 }
