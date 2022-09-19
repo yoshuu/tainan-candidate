@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .map-box {
   background-image: url(../../images/mapButton.png);
   width: 245px;
@@ -86,15 +90,22 @@
   height: 60px;
   line-height: 60px;
 }
+.popuping button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.popuping button:focus-visible {
+  outline: 1px solid transparent;
+}
 .popuping .close {
   width: 20px;
   height: 20px;
   background-image: url(../../images/Vector.png);
   background-size: 100%;
+  background-repeat: no-repeat;
   position: absolute;
   top: 20px;
   left: 20px;
-  cursor: pointer;
 }
 .popuping main {
   padding: 20px 40px;
@@ -116,6 +127,12 @@
 }
 .popuping main .facebook-button {
   margin-left: 219px;
+}
+
+dialog {
+  padding: 0;
+  border: 1px solid transparent;
+  overflow: scroll;
 }
 
 header .container .navbar {
@@ -211,7 +228,7 @@ body {
   width: 100%;
 }
 
-.candidate-map {
+.candidate-information {
   align-self: center;
   flex-basis: 1066px;
 }
@@ -247,7 +264,6 @@ body {
   height: 587px;
   width: 857px;
 }
-
 
 .tainan-three-map-button {
   position: absolute;
@@ -287,11 +303,6 @@ body {
 .ping-name {
   left: 112.49px;
   top: 803.9px;
-
-
-body {
-  background-color: #50a5a4;
-  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
