@@ -1,17 +1,43 @@
 @use '../utility';
 
 
+.tainan-container {
+    @media (min-width: 1280px) {
+        overflow: hidden;
+        height: calc(980px + 48px);
+    }
+    
+    @media (min-width: 1920px) {
+        height: calc(100vh - 48px);
+    }
+}
+
 .tainan-three {
+    transform: translateY(182px);
     display: flex;
     justify-content: center;
+
+    @media (min-width: 1280px) {
+        transform: translateY(48px);
+    }
+
+    img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
 
     &__outer-circle {
         position: relative;
         transform: translateY(48px);
-        width: 1175px;
-        height: 1175px;
-        border-radius: 50%;
-        background-color: utility.$secondary-middle;
+        // width: 1175px;
+        // height: 1175px;
+        // background-image: url('../../images/Ellipse\ 13.png');
+        // border-radius: 50%;
+        // background-color: utility.$secondary-middle;
+        img {
+            width: 100%;
+        }
 
         &:hover {
             .people-name {
@@ -23,35 +49,47 @@
         position: absolute;
         top: 32.28px;
         left: 32.28px;
-        width: 1109.36px;
-        height: 1109.36px;
-        border-radius: 50%;
-        background-color: utility.$secondary-light;
+        right: 32.28px;
+        bottom: 32.28px;
+        // width: 1109.36px;
+        // height: 1109.36px;
+        // border-radius: 50%;
+        // background-color: utility.$secondary-light;
+        img {
+            width: 100%;
+        }
     }
     &__people {
         position: absolute;
         top: 359.99px;
         left: 137.47px;
-        height: 587px;
-        width: 857px;
+        bottom: 194.76px;
+        right: 157.82px;
+        // height: 587px;
+        // width: 857px;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
 .tainan-three-map-button {
     // 參照main container
     position: absolute;
-    left: 1523px;
+    right: 120.7px;
     top: 158px;
 }
 
 .tainan-people-party {
-    height: 300px;
+    // height: 300px;
     position: absolute;
-    top: 59.18px;
-    left: 385px;
+    top: 91.46px;
+    left: 456.83px;
+    right: 467.59px;
 
     img {
-        height: 100%;
+        width: 100%;
     }
 }
 

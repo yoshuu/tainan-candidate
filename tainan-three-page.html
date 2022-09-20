@@ -75,35 +75,37 @@
     </header>
     <main>
       <div class="container p-0">
-        <div class="tainan-three">
-          <div class="tainan-three__outer-circle">
-            <div class="tainan-three__inner-circle">
-              <div class="tainan-people-party">
-                <img src="./images/taiwan-people's-parties.png" alt="">
+        <div class="tainan-container">
+          <div class="tainan-three">
+            <img src="./images/tainan-three-total.png" alt="tainan-total">
+            <!-- <div class="tainan-three__outer-circle">
+              <img src="./images/outer-circle.png" alt="outer-circle">
+              <div class="tainan-three__inner-circle">
+                <img src="./images/inner-circle.png" alt="inner-circle">
+                <div class="tainan-people-party">
+                  <img src="./images/taiwan-people's-parties.png" alt="">
+                </div>
+                <div class="tainan-three__people">
+                  <img src="./images/3guys.png" alt="tainan-three">
+                </div>
+                <div class="people-name kiang-name">
+                  <img src="./images/江明宗 (Stroke)-small.jpg" alt="">
+                  <img src="./images/北中西區台南市議員參選人.png" alt="">
+                </div>
+                <div class="people-name kuo-name">
+                  <img src="./images/江國銘 (Stroke).jpg" alt="">
+                  <img src="./images/仁德、歸仁、關廟、龍崎 台南市議員參選人.png" alt="">
+                </div>
+                <div class="people-name ping-name">
+                  <img src="./images/江品璁.jpg" alt="">
+                  <img src="./images/永康區台南市議員參選人.png" alt="">
+                </div>
               </div>
-              <div class="tainan-three__people">
-                <img src="./images/3guys.png" alt="">
-              </div>
-              <div class="people-name kiang-name">
-                <img src="./images/江明宗 (Stroke)-small.jpg" alt="">
-                <img src="./images/北中西區台南市議員參選人.png" alt="">
-              </div>
-              <div class="people-name kuo-name">
-                <img src="./images/江國銘 (Stroke).jpg" alt="">
-                <img src="./images/仁德、歸仁、關廟、龍崎 台南市議員參選人.png" alt="">
-              </div>
-              <div class="people-name ping-name">
-                <img src="./images/江品璁.jpg" alt="">
-                <img src="./images/永康區台南市議員參選人.png" alt="">
-              </div>
-            </div>
+            </div> -->
           </div>
-        </div>
+       </div>
         <div class="tainan-three-map-button">
           <div class="map-box">
-            <a target="_blank" class="map-button" href="www.google.com\"
-              >&nbsp;</a
-            >
           </div>
         </div>
         <dialog class="popuping kiang-dialog">
@@ -237,6 +239,12 @@
             </main>
           </form>
         </dialog>
+        <dialog class="popuping street-speech">
+          <form method="dialog">
+            <button class="close"></button>
+            <iframe width="100%" height="100%" src="https://tainan.olc.tw/street.html" frameborder="0" seamless></iframe>
+          </form>
+        </dialog>
       </div>
     </main>
     <script
@@ -245,29 +253,33 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const kiangName = document.querySelector(".kiang-name")
-      const kuoName = document.querySelector(".kuo-name")
-      const pingName = document.querySelector(".ping-name")
+      // const kiangName = document.querySelector(".kiang-name")
+      // const kuoName = document.querySelector(".kuo-name")
+      // const pingName = document.querySelector(".ping-name")
 
-      const kiangDialog = document.querySelector(".kiang-dialog")
-      const kuoDialog = document.querySelector(".kuo-dialog")
-      const pingDialog = document.querySelector(".ping-dialog")
+      // const kiangDialog = document.querySelector(".kiang-dialog")
+      // const kuoDialog = document.querySelector(".kuo-dialog")
+      // const pingDialog = document.querySelector(".ping-dialog")
 
-      kiangName.addEventListener("click", function (e) {
-        kiangDialog.showModal();
+      // kiangName.addEventListener("click", function (e) {
+      //   kiangDialog.showModal();
+      // })
+
+      // kuoName.addEventListener('click', function () {
+      //   kuoDialog.showModal();        
+      // })
+
+      // pingName.addEventListener('click', function () {
+      //   pingDialog.showModal();
+      // })
+
+      const streetSpeechBtn = document.querySelector(".tainan-three-map-button")
+      const streetSpeechDialog = document.querySelector(".street-speech")
+
+      streetSpeechBtn.addEventListener('click', function (e) {
+        console.log("here");
+        streetSpeechDialog.showModal();
       })
-
-      kuoName.addEventListener('click', function () {
-        kuoDialog.showModal();        
-      })
-
-      pingName.addEventListener('click', function () {
-        pingDialog.showModal();
-      })
-
-
-
-
     </script>
   </body>
 </html>
