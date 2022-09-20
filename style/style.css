@@ -46,7 +46,6 @@ a {
 }
 
 .declaration {
-  width: 880px;
   border: 10px solid #a7ced4;
   background-color: #e3eaea;
   position: relative;
@@ -103,7 +102,17 @@ a {
 .popuping .close {
   width: 20px;
   height: 20px;
-  background-image: url(../../images/Vector.png);
+  background-image: url("../../images/Vector.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.popuping .close--black {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/black-cross.png");
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -141,6 +150,14 @@ dialog {
 .street-speech {
   width: 100%;
   height: 100%;
+}
+
+.mobile-popuping form {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-popuping header, .mobile-popuping main {
+  background-color: #e3eaea;
 }
 
 .navbar-laptop {
@@ -235,37 +252,52 @@ body {
 }
 
 .front-page-container {
-  position: relative;
-  flex-basis: 1641px;
   display: flex;
-  justify-content: space-between;
-  gap: 178px;
-  height: calc(100vh - 77px);
+}
+@media (min-width: 1920px) {
+  .front-page-container {
+    height: calc(100vh - 77px);
+  }
+}
+
+.candidate {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 .candidate-image {
+  position: relative;
   align-self: flex-end;
-  flex-basis: 397px;
 }
 .candidate-image img {
   object-fit: contain;
-  height: 100%;
-}
-
-.candidate-name {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 200px;
-  top: 670px;
-}
-.candidate-name img {
   width: 100%;
 }
 
 .candidate-information {
-  align-self: center;
-  flex-basis: 1066px;
+  display: none;
+}
+@media (min-width: 1280px) {
+  .candidate-information {
+    display: block;
+    align-self: center;
+    flex-basis: 880px;
+  }
+}
+
+.candidate-about-me-button {
+  position: absolute;
+  left: 300px;
+  top: 50px;
+}
+.candidate-about-me-button img {
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .candidate-about-me-button {
+    display: none;
+  }
 }
 
 @media (min-width: 1280px) {

@@ -1,34 +1,48 @@
 .front-page-container {
-    position: relative;
-    flex-basis: 1641px;
-    display: flex;
-    justify-content: space-between;
-    gap: 178px;
+  display: flex;
+  @media (min-width: 1920px) {
     height: calc(100vh - 77px);
   }
+}
+
+.candidate {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
   
-  .candidate-image {
-    align-self: flex-end;
-    flex-basis: 397px;
-    img {
-      object-fit: contain;
-      height: 100%;
-    }
+.candidate-image {
+  position: relative;
+  align-self: flex-end;
+
+  img {
+    object-fit: contain;
+    width: 100%;
   }
-  
-  .candidate-name {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: 200px;
-    top: 670px;
-    img {
-      width: 100%;
-    }
-  }
-  
-  .candidate-information {
+}
+
+.candidate-information {
+  display: none;
+  @media (min-width: 1280px) {
+    display: block;
     align-self: center;
-    flex-basis: 1066px;
+    flex-basis: 880px;
+    
   }
+}
   
+
+.candidate-about-me-button {
+  position: absolute;
+  left: 300px;
+  top: 50px;
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
+
+}
