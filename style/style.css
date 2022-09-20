@@ -1,16 +1,23 @@
+a {
+  text-decoration: none;
+}
+
 .map-box {
+  width: 153px;
+  height: 130px;
   background-image: url(../../images/mapButton.png);
-  width: 245px;
-  height: 215px;
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+@media (min-width: 1280px) {
+  .map-box {
+    width: 245px;
+    height: 215px;
+  }
 }
 .map-box:hover {
   background-image: url(../../images/mapButtonHover.png);
-}
-.map-box .map-button {
-  display: block;
-  line-height: 215px;
 }
 
 .facebook-button {
@@ -39,7 +46,6 @@
 }
 
 .declaration {
-  width: 880px;
   border: 10px solid #a7ced4;
   background-color: #e3eaea;
   position: relative;
@@ -86,15 +92,32 @@
   height: 60px;
   line-height: 60px;
 }
+.popuping button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.popuping button:focus-visible {
+  outline: 1px solid transparent;
+}
 .popuping .close {
   width: 20px;
   height: 20px;
-  background-image: url(../../images/Vector.png);
+  background-image: url("../../images/Vector.png");
   background-size: 100%;
+  background-repeat: no-repeat;
   position: absolute;
   top: 20px;
   left: 20px;
-  cursor: pointer;
+}
+.popuping .close--black {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/black-cross.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 .popuping main {
   padding: 20px 40px;
@@ -116,6 +139,54 @@
 }
 .popuping main .facebook-button {
   margin-left: 219px;
+}
+
+dialog {
+  padding: 0;
+  border: 1px solid transparent;
+  overflow: scroll;
+}
+
+.street-speech {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-popuping form {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-popuping header, .mobile-popuping main {
+  background-color: #e3eaea;
+}
+
+.navbar-laptop {
+  display: none;
+}
+@media (min-width: 1028px) {
+  .navbar-laptop {
+    display: flex;
+  }
+}
+
+.navbar-mobile {
+  display: block;
+}
+@media (min-width: 1028px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+.navbar-mobile .brand-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-mobile .navbar-nav {
+  flex-direction: row;
+  overflow: auto;
+}
+.navbar-mobile .navbar-nav .nav-item {
+  flex-shrink: 0;
 }
 
 header .container .navbar {
@@ -142,9 +213,6 @@ header .container .navbar {
   width: 130px;
 }
 
-.party-logo {
-  display: none;
-}
 @media (min-width: 992px) {
   .party-logo {
     display: inline-block;
@@ -184,49 +252,94 @@ body {
 }
 
 .front-page-container {
-  position: relative;
-  flex-basis: 1641px;
   display: flex;
-  justify-content: space-between;
-  gap: 178px;
+}
+@media (min-width: 1920px) {
+  .front-page-container {
+    height: calc(100vh - 77px);
+  }
+}
+
+.candidate {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
 }
 
 .candidate-image {
+  position: relative;
   align-self: flex-end;
-  flex-basis: 397px;
 }
 .candidate-image img {
   object-fit: contain;
-  height: 100%;
-}
-
-.candidate-name {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  left: 200px;
-  top: 670px;
-}
-.candidate-name img {
   width: 100%;
 }
 
-.candidate-map {
-  align-self: center;
-  flex-basis: 1066px;
+.candidate-information {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .candidate-information {
+    display: block;
+    align-self: center;
+    flex-basis: 880px;
+  }
+}
+
+.candidate-about-me-button {
+  position: absolute;
+  left: 300px;
+  top: 50px;
+}
+.candidate-about-me-button img {
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .candidate-about-me-button {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tainan-container {
+    overflow: hidden;
+    height: 1028px;
+  }
+}
+@media (min-width: 1920px) {
+  .tainan-container {
+    height: calc(100vh - 48px);
+  }
 }
 
 .tainan-three {
   display: flex;
   justify-content: center;
+  padding-top: 182px;
+  overflow: hidden;
+}
+@media (min-width: 1280px) {
+  .tainan-three {
+    padding-top: 48px;
+  }
+}
+.tainan-three img {
+  object-fit: contain;
+  height: 120%;
+  width: 120%;
+}
+@media (min-width: 1280px) {
+  .tainan-three img {
+    height: 100%;
+    width: 100%;
+  }
 }
 .tainan-three__outer-circle {
   position: relative;
   transform: translateY(48px);
-  width: 1175px;
-  height: 1175px;
-  border-radius: 50%;
-  background-color: #a7ced4;
+}
+.tainan-three__outer-circle img {
+  width: 100%;
 }
 .tainan-three__outer-circle:hover .people-name {
   transform: translateY(3px);
@@ -235,34 +348,49 @@ body {
   position: absolute;
   top: 32.28px;
   left: 32.28px;
-  width: 1109.36px;
-  height: 1109.36px;
-  border-radius: 50%;
-  background-color: #e3eaea;
+  right: 32.28px;
+  bottom: 32.28px;
+}
+.tainan-three__inner-circle img {
+  width: 100%;
 }
 .tainan-three__people {
   position: absolute;
   top: 359.99px;
   left: 137.47px;
-  height: 587px;
-  width: 857px;
+  bottom: 194.76px;
+  right: 157.82px;
 }
-
+.tainan-three__people img {
+  width: 100%;
+}
 
 .tainan-three-map-button {
   position: absolute;
-  left: 1523px;
-  top: 158px;
+  right: 20px;
+  top: 40px;
+}
+@media (min-width: 1280px) {
+  .tainan-three-map-button {
+    right: 15px;
+    top: 74px;
+  }
+}
+@media (min-width: 1920px) {
+  .tainan-three-map-button {
+    right: 120.7px;
+    top: 158px;
+  }
 }
 
 .tainan-people-party {
-  height: 300px;
   position: absolute;
-  top: 59.18px;
-  left: 385px;
+  top: 91.46px;
+  left: 456.83px;
+  right: 467.59px;
 }
 .tainan-people-party img {
-  height: 100%;
+  width: 100%;
 }
 
 .people-name {
@@ -287,11 +415,6 @@ body {
 .ping-name {
   left: 112.49px;
   top: 803.9px;
-
-
-body {
-  background-color: #50a5a4;
-  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

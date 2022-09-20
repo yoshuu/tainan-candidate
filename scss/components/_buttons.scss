@@ -1,20 +1,27 @@
 @use "../utility";
 
 .map-box {
+  width: 153px;
+  height: 130px;
+
+  @media (min-width: 1280px) {
+    width: 245px;
+    height: 215px;
+}
   background-image: url(../../images/mapButton.png);
-  width: 245px;
-  height: 215px;
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
   &:hover {
     background-image: url(../../images/mapButtonHover.png);
   }
 
-  .map-button {
-    display: block;
-    line-height: 215px;
-  }
+  // .map-button {
+  //   display: block;
+  //   line-height: 215px;
+  // }
 }
+
 
 .facebook-button {
   display: flex;
