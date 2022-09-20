@@ -1,5 +1,31 @@
 @use "../utility";
 
+.navbar-laptop {
+  display: none;
+  @media (min-width: 1028px) {
+    display: flex;
+    
+  }
+}
+
+.navbar-mobile {
+  display: block;
+  @media (min-width: 1028px) {
+    display: none;
+  }
+  .brand-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-nav {
+    flex-direction: row;
+    overflow: auto;
+    .nav-item {
+      flex-shrink: 0;
+    }
+  }
+}
+
 header .container .navbar {
   background-color: utility.$header;
   padding: 10px 43px;
@@ -23,7 +49,6 @@ header .container .navbar {
   width: 130px;
 }
 .party-logo {
-  display: none;
   @media (min-width: 992px) {
     display: inline-block;
   }

@@ -143,6 +143,35 @@ dialog {
   height: 100%;
 }
 
+.navbar-laptop {
+  display: none;
+}
+@media (min-width: 1028px) {
+  .navbar-laptop {
+    display: flex;
+  }
+}
+
+.navbar-mobile {
+  display: block;
+}
+@media (min-width: 1028px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+.navbar-mobile .brand-container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-mobile .navbar-nav {
+  flex-direction: row;
+  overflow: auto;
+}
+.navbar-mobile .navbar-nav .nav-item {
+  flex-shrink: 0;
+}
+
 header .container .navbar {
   background-color: #f4f4ee;
   padding: 10px 43px;
@@ -167,9 +196,6 @@ header .container .navbar {
   width: 130px;
 }
 
-.party-logo {
-  display: none;
-}
 @media (min-width: 992px) {
   .party-logo {
     display: inline-block;
