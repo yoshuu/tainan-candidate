@@ -156,7 +156,8 @@ dialog {
   display: flex;
   flex-direction: column;
 }
-.mobile-popuping header, .mobile-popuping main {
+.mobile-popuping header,
+.mobile-popuping main {
   background-color: #e3eaea;
 }
 
@@ -415,6 +416,35 @@ body {
 .ping-name {
   left: 112.49px;
   top: 803.9px;
+}
+
+.map-page {
+  height: 100vh;
+  padding-top: 185px;
+  flex-basis: 1003px;
+  position: relative;
+}
+.map-page .map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 61.6322701689%;
+}
+.map-page .map-container .map-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.instruct-sign {
+  transform: translateY(-30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
