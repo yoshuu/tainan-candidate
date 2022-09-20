@@ -118,6 +118,71 @@
   margin-left: 219px;
 }
 
+.sticky-notes {
+  width: 977px;
+  margin: 100px auto;
+  background: linear-gradient(to right bottom, transparent 50%, #fff 0) no-repeat 0% 0/100px 100px, linear-gradient(135deg, transparent 70px, rgba(255, 255, 255, 0.8) 0);
+  font-family: Noto Sans TC;
+}
+.sticky-notes .speech-record {
+  padding: 24px 40px 40px 40px;
+}
+.sticky-notes .speech-record h2 {
+  margin-bottom: 53px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.sticky-notes .speech-record .upper-theme {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+}
+.sticky-notes .speech-record .upper-theme .activity-theme,
+.sticky-notes .speech-record .upper-theme .event-name {
+  margin-right: 176px;
+}
+.sticky-notes .speech-record .upper-theme .date {
+  margin-right: 73px;
+}
+.sticky-notes .speech-record .item {
+  margin-top: 20px;
+}
+.sticky-notes .speech-record .item .content {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+}
+.sticky-notes .speech-record .item .content .activity-theme,
+.sticky-notes .speech-record .item .content .event-name {
+  width: 200px;
+  height: 40px;
+  margin-right: 40px;
+}
+.sticky-notes .speech-record .item .content .date {
+  width: 105px;
+  height: 40px;
+}
+.sticky-notes .speech-record .item .content .Slideshow-download,
+.sticky-notes .speech-record .item .content .video-download {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #28c8c8;
+  border-radius: 4px;
+}
+.sticky-notes .speech-record .item .content .video-download {
+  margin-left: 15px;
+}
+.sticky-notes .speech-record .item .Down {
+  height: 1px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
 header .container .navbar {
   background-color: #f4f4ee;
   padding: 10px 43px;
@@ -211,7 +276,7 @@ body {
   width: 100%;
 }
 
-.candidate-map {
+.candidate-information {
   align-self: center;
   flex-basis: 1066px;
 }
@@ -247,7 +312,6 @@ body {
   height: 587px;
   width: 857px;
 }
-
 
 .tainan-three-map-button {
   position: absolute;
@@ -287,11 +351,6 @@ body {
 .ping-name {
   left: 112.49px;
   top: 803.9px;
-
-
-body {
-  background-color: #50a5a4;
-  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
