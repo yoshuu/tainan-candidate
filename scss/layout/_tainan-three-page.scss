@@ -13,18 +13,26 @@
 }
 
 .tainan-three {
-    transform: translateY(182px);
     display: flex;
     justify-content: center;
+    // transform: translateY(182px);
+    padding-top: 182px;
+    overflow: hidden;
 
     @media (min-width: 1280px) {
-        transform: translateY(48px);
+        padding-top: 48px;
+        // transform: translateY(48px);
     }
 
     img {
         object-fit: contain;
+        height: 120%;
+        width: 120%;
+        
+        @media (min-width: 1280px) {
         height: 100%;
-        width: 100%;
+        width: 100%;   
+        }
     }
 
     &__outer-circle {
@@ -77,8 +85,18 @@
 .tainan-three-map-button {
     // 參照main container
     position: absolute;
-    right: 120.7px;
-    top: 158px;
+    right: 20px;
+    top: 40px;
+
+    @media (min-width: 1280px) {
+        right: 15px;
+        top: 74px;
+    }
+
+    @media (min-width: 1920px) {
+        right: 120.7px;
+        top: 158px;
+    }
 }
 
 .tainan-people-party {

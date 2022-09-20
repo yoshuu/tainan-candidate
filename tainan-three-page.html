@@ -242,7 +242,7 @@
         <dialog class="popuping street-speech">
           <form method="dialog">
             <button class="close"></button>
-            <iframe width="100%" height="100%" src="https://tainan.olc.tw/street.html" frameborder="0" seamless></iframe>
+            <iframe src="https://tainan.olc.tw/street.html" frameborder="0" seamless></iframe>
           </form>
         </dialog>
       </div>
@@ -277,7 +277,6 @@
       const streetSpeechDialog = document.querySelector(".street-speech")
 
       streetSpeechBtn.addEventListener('click', function (e) {
-        console.log("here");
         streetSpeechDialog.showModal();
       })
     </script>
