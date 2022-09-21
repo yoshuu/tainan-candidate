@@ -156,7 +156,8 @@ dialog {
   display: flex;
   flex-direction: column;
 }
-.mobile-popuping header, .mobile-popuping main {
+.mobile-popuping header,
+.mobile-popuping main {
   background-color: #e3eaea;
 }
 
@@ -288,11 +289,16 @@ body {
 
 .candidate-about-me-button {
   position: absolute;
-  left: 300px;
+  left: 200px;
   top: 50px;
 }
 .candidate-about-me-button img {
   width: 100%;
+}
+@media (min-width: 400px) {
+  .candidate-about-me-button {
+    left: 300px;
+  }
 }
 @media (min-width: 1280px) {
   .candidate-about-me-button {
@@ -415,6 +421,53 @@ body {
 .ping-name {
   left: 112.49px;
   top: 803.9px;
+}
+
+.map-page {
+  height: 100vh;
+  padding-top: 185px;
+  flex-basis: 1003px;
+  position: relative;
+}
+.map-page .map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 61.6322701689%;
+}
+.map-page .map-container .map-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.instruct-sign {
+  transform: translateY(-30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-30px);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-33px);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: translateY(-30px);
+    animation-timing-function: ease-in-out;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
