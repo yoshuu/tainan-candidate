@@ -33,4 +33,24 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-30px);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: translateY(-33px);
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    transform: translateY(-30px);
+    animation-timing-function: ease-in-out;
+  }
 }
