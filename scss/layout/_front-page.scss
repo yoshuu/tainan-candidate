@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-around;
 }
-  
+
 .candidate-image {
   position: relative;
   align-self: flex-end;
@@ -27,22 +27,24 @@
     display: block;
     align-self: center;
     flex-basis: 880px;
-    
   }
 }
-  
 
 .candidate-about-me-button {
   position: absolute;
-  left: 300px;
+  // button會因為畫面小距離不變的話會消失
+  left: 200px;
   top: 50px;
 
   img {
     width: 100%;
   }
 
+  @media (min-width: 400px) {
+    left: 300px;
+  }
+
   @media (min-width: 1280px) {
     display: none;
   }
-
 }

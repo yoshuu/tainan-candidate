@@ -289,11 +289,16 @@ body {
 
 .candidate-about-me-button {
   position: absolute;
-  left: 300px;
+  left: 200px;
   top: 50px;
 }
 .candidate-about-me-button img {
   width: 100%;
+}
+@media (min-width: 400px) {
+  .candidate-about-me-button {
+    left: 300px;
+  }
 }
 @media (min-width: 1280px) {
   .candidate-about-me-button {
