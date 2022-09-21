@@ -32,7 +32,7 @@
   .close {
     width: 20px;
     height: 20px;
-    background-image: url('../../images/Vector.png');
+    background-image: url("../../images/Vector.png");
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -42,7 +42,7 @@
     &--black {
       width: 20px;
       height: 20px;
-      background-image: url('../../images/black-cross.png');
+      background-image: url("../../images/black-cross.png");
       background-size: 100%;
       background-repeat: no-repeat;
       position: absolute;
@@ -50,7 +50,6 @@
       left: 20px;
     }
   }
-
 
   main {
     padding: 20px 40px;
@@ -79,7 +78,6 @@
   }
 }
 
-
 dialog {
   padding: 0;
   border: 1px solid transparent;
@@ -92,14 +90,12 @@ dialog {
 }
 
 .mobile-popuping {
-
   form {
     display: flex;
     flex-direction: column;
   }
-  header, main {
-    background-color: 
-    utility.$secondary-light;
+  header,
+  main {
+    background-color: utility.$secondary-light;
   }
-
 }
