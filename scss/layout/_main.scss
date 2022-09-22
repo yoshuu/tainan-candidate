@@ -1,7 +1,10 @@
 main .container {
   // 規定全部要變成都在一頁完成的
 
-  height: calc(100vh - 77px);
+  @media (min-width: 992px) {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
 
   position: relative;
   display: flex;

@@ -315,11 +315,16 @@ header {
 }
 
 main .container {
-  height: calc(100vh - 77px);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 992px) {
+  main .container {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -380,7 +385,7 @@ body {
 }
 @media (min-width: 400px) {
   .candidate-about-me-button {
-    left: 200px;
+    left: 235px;
   }
 }
 .candidate-about-me-button img {
@@ -394,34 +399,41 @@ body {
 
 @media (min-width: 1280px) {
   .tainan-container {
-    overflow: hidden;
-    height: 1028px;
-  }
-}
-@media (min-width: 1920px) {
-  .tainan-container {
-    height: calc(100vh - 48px);
+    height: calc(100vh - 77px);
   }
 }
 
 .tainan-three {
+  position: relative;
   display: flex;
   justify-content: center;
-  padding-top: 182px;
   overflow: hidden;
+  transform: translateY(192px);
 }
 @media (min-width: 1280px) {
   .tainan-three {
-    padding-top: 48px;
+    overflow: initial;
+    transform: translateY(103px);
   }
 }
-.tainan-three img {
+@media (min-width: 1920px) {
+  .tainan-three {
+    transform: translateY(27px);
+  }
+}
+.tainan-three .tainan-three-img {
   object-fit: contain;
   height: 120%;
   width: 120%;
 }
-@media (min-width: 1280px) {
-  .tainan-three img {
+@media (min-width: 992px) {
+  .tainan-three .tainan-three-img {
+    height: calc(100vh - 77px);
+    width: 100%;
+  }
+}
+@media (min-width: 1920px) {
+  .tainan-three .tainan-three-img {
     height: 100%;
     width: 100%;
   }
@@ -486,27 +498,77 @@ body {
 }
 
 .people-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 126.26px;
-  height: 56.04px;
   position: absolute;
+  cursor: pointer;
 }
 
 .kiang-name {
-  left: 828.6px;
-  top: 798.01px;
+  top: 70%;
+  left: 73%;
+}
+.kiang-name img {
+  width: 70%;
+  height: 70%;
+}
+@media (min-width: 576px) {
+  .kiang-name img {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (min-width: 1920px) {
+  .kiang-name img {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .kuo-name {
-  left: 497.8px;
-  top: 718.1px;
+  top: 66%;
+  left: 42%;
+}
+@media (min-width: 1920px) {
+  .kuo-name {
+    top: 66%;
+    left: 44%;
+  }
+}
+.kuo-name img {
+  width: 40%;
+  height: 40%;
+}
+@media (min-width: 576px) {
+  .kuo-name img {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (min-width: 1920px) {
+  .kuo-name img {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .ping-name {
-  left: 112.49px;
-  top: 803.9px;
+  top: 70%;
+  left: 13%;
+}
+.ping-name img {
+  width: 40%;
+  height: 40%;
+}
+@media (min-width: 576px) {
+  .ping-name img {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (min-width: 1920px) {
+  .ping-name img {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .map-page {
