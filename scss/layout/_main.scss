@@ -1,8 +1,10 @@
-
 main .container {
+  // 規定全部要變成都在一頁完成的
+
+  height: calc(100vh - 77px);
+
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-

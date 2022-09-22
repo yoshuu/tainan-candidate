@@ -1,137 +1,136 @@
-@use '../utility';
-
+@use "../utility";
 
 .tainan-container {
-    @media (min-width: 1280px) {
-        overflow: hidden;
-        height: calc(980px + 48px);
-    }
-    
-    @media (min-width: 1920px) {
-        height: calc(100vh - 48px);
-    }
+  @media (min-width: 1280px) {
+    overflow: hidden;
+    height: calc(980px + 48px);
+  }
+
+  @media (min-width: 1920px) {
+    height: calc(100vh - 48px);
+  }
 }
 
 .tainan-three {
-    display: flex;
-    justify-content: center;
-    // transform: translateY(182px);
-    padding-top: 182px;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  // transform: translateY(182px);
+  padding-top: 182px;
+  overflow: hidden;
+
+  @media (min-width: 1280px) {
+    padding-top: 48px;
+    // transform: translateY(48px);
+  }
+
+  img {
+    object-fit: contain;
+    height: 120%;
+    width: 120%;
 
     @media (min-width: 1280px) {
-        padding-top: 48px;
-        // transform: translateY(48px);
+      height: 100%;
+      width: 100%;
     }
+  }
+
+  &__outer-circle {
+    position: relative;
+    transform: translateY(48px);
+    // width: 1175px;
+    // height: 1175px;
+    // background-image: url('../../images/Ellipse\ 13.png');
+    // border-radius: 50%;
+    // background-color: utility.$secondary-middle;
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      .people-name {
+        transform: translateY(3px);
+      }
+    }
+  }
+  &__inner-circle {
+    position: absolute;
+    top: 32.28px;
+    left: 32.28px;
+    right: 32.28px;
+    bottom: 32.28px;
+    // width: 1109.36px;
+    // height: 1109.36px;
+    // border-radius: 50%;
+    // background-color: utility.$secondary-light;
+    img {
+      width: 100%;
+    }
+  }
+  &__people {
+    position: absolute;
+    top: 359.99px;
+    left: 137.47px;
+    bottom: 194.76px;
+    right: 157.82px;
+    // height: 587px;
+    // width: 857px;
 
     img {
-        object-fit: contain;
-        height: 120%;
-        width: 120%;
-        
-        @media (min-width: 1280px) {
-        height: 100%;
-        width: 100%;   
-        }
+      width: 100%;
     }
-
-    &__outer-circle {
-        position: relative;
-        transform: translateY(48px);
-        // width: 1175px;
-        // height: 1175px;
-        // background-image: url('../../images/Ellipse\ 13.png');
-        // border-radius: 50%;
-        // background-color: utility.$secondary-middle;
-        img {
-            width: 100%;
-        }
-
-        &:hover {
-            .people-name {
-                transform: translateY(3px);
-            }
-        }
-    }
-    &__inner-circle {
-        position: absolute;
-        top: 32.28px;
-        left: 32.28px;
-        right: 32.28px;
-        bottom: 32.28px;
-        // width: 1109.36px;
-        // height: 1109.36px;
-        // border-radius: 50%;
-        // background-color: utility.$secondary-light;
-        img {
-            width: 100%;
-        }
-    }
-    &__people {
-        position: absolute;
-        top: 359.99px;
-        left: 137.47px;
-        bottom: 194.76px;
-        right: 157.82px;
-        // height: 587px;
-        // width: 857px;
-
-        img {
-            width: 100%;
-        }
-    }
+  }
 }
 
 .tainan-three-map-button {
-    // 參照main container
-    position: absolute;
-    right: 20px;
-    top: 40px;
+  // 參照main container
+  position: absolute;
+  right: 20px;
+  top: 40px;
 
-    @media (min-width: 1280px) {
-        right: 15px;
-        top: 74px;
-    }
+  @media (min-width: 1280px) {
+    right: 15px;
+    top: 74px;
+  }
 
-    @media (min-width: 1920px) {
-        right: 120.7px;
-        top: 158px;
-    }
+  @media (min-width: 1920px) {
+    right: 120.7px;
+    top: 158px;
+  }
 }
 
 .tainan-people-party {
-    // height: 300px;
-    position: absolute;
-    top: 91.46px;
-    left: 456.83px;
-    right: 467.59px;
+  // height: 300px;
+  position: absolute;
+  top: 91.46px;
+  left: 456.83px;
+  right: 467.59px;
 
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 
 .people-name {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 126.26px;
-    height: 56.04px;
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 126.26px;
+  height: 56.04px;
+  position: absolute;
 }
 
 .kiang-name {
-    // 吃inner-circle的
-    left: 828.6px;
-    top: 798.01px;
+  // 吃inner-circle的
+  left: 828.6px;
+  top: 798.01px;
 }
 
 .kuo-name {
-    left: 497.8px;
-    top: 718.1px;
+  left: 497.8px;
+  top: 718.1px;
 }
 
 .ping-name {
-    left: 112.49px;
-    top: 803.9px;
+  left: 112.49px;
+  top: 803.9px;
 }
