@@ -231,10 +231,19 @@ dialog {
   padding: 24px 40px;
 }
 .sticky-notes .speech-record h2 {
-  font-size: 36px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 33px;
+  font-size: 16px;
+}
+@media (min-width: 992px) {
+  .sticky-notes .speech-record h2 {
+    font-size: 36px;
+  }
+}
+.sticky-notes .speech-record p {
+  font-size: 14px;
+  font-weight: 500;
 }
 .sticky-notes .speech-record-topic {
   display: none;
@@ -263,6 +272,7 @@ dialog {
     grid-template-columns: 2fr 2fr 1fr 3fr;
     padding: 20px 0;
     border-bottom: rgba(0, 0, 0, 0.1019607843) 1px solid;
+    gap: 10px;
   }
   .sticky-notes .speech-record-tablet .speech-record-content .resources-content {
     display: flex;
@@ -275,7 +285,7 @@ dialog {
   flex-direction: column;
   gap: 12px;
   border-bottom: rgba(0, 0, 0, 0.1019607843) 1px solid;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 @media (min-width: 992px) {
   .sticky-notes .speech-record-mobile {
@@ -283,7 +293,7 @@ dialog {
   }
 }
 .sticky-notes .speech-record-mobile h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-family: Noto Sans TC;
   font-weight: 700;
 }
