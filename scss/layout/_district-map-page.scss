@@ -1,20 +1,18 @@
 .map-page {
-  height: 100vh;
-  padding-top: 185px;
-  flex-basis: 1003px;
-  position: relative;
+  padding-top: 30px;
+  flex-basis: 803px;
+  align-self: flex-start;
 
-  //   @media (min-width: 1920px) {
-  //     height: calc(100vh - 77px);
-  //   }
+  @media (min-width: 1920px) {
+    flex-basis: 1003px;
+    padding-top: 183px;
+  }
 
   .map-container {
     position: relative;
     overflow: hidden;
     padding-top: calc(657 / 1066 * 100%);
-    // @media (min-width: 1920px) {
-    //   padding-top: 0;
-    // }
+
     .map-iframe {
       position: absolute;
       top: 0;
@@ -27,7 +25,7 @@
 }
 
 .instruct-sign {
-  transform: translateY(-30px);
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,17 +38,17 @@
 
 @keyframes bounce {
   from {
-    transform: translateY(-30px);
+    transform: translateY(0px);
     animation-timing-function: ease-out;
   }
 
   50% {
-    transform: translateY(-33px);
+    transform: translateY(-3px);
     animation-timing-function: ease-in;
   }
 
   to {
-    transform: translateY(-30px);
+    transform: translateY(0px);
     animation-timing-function: ease-in-out;
   }
 }

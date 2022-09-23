@@ -1,13 +1,24 @@
 @use "../utility";
 
 .map-box {
+  // 1280px以上再使用absolute，以下讓他使用normal flow
+  // right: -100px;
+  align-self: flex-end;
   width: 153px;
   height: 130px;
 
   @media (min-width: 1280px) {
+    position: absolute;
+    right: -150px;
+    top: 0;
+    // width: 220px;
+    // height: 220px;
+  }
+
+  @media (min-width: 1920px) {
     width: 245px;
     height: 215px;
-}
+  }
   background-image: url(../../images/mapButton.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -21,7 +32,6 @@
   //   line-height: 215px;
   // }
 }
-
 
 .facebook-button {
   display: flex;

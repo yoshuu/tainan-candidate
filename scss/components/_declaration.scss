@@ -1,7 +1,6 @@
 @use "../utility";
 
 .declaration {
-  // width: 880px;
   border: 10px solid utility.$secondary-middle;
   background-color: utility.$secondary-light;
   position: relative;
@@ -20,16 +19,24 @@
     right: -40px;
   }
 
-  .content {
+  .content-container {
+    height: calc(100vh - 200px);
+    overflow: scroll;
     padding: 40px;
 
-    h2 {
-      margin-bottom: 24px;
-      font-size: 26px;
+    @media (min-width: 1920px) {
+      height: initial;
     }
-    p {
-      margin: 0;
-      font-size: 16px;
+
+    .content {
+      h2 {
+        margin-bottom: 24px;
+        font-size: 26px;
+      }
+      p {
+        margin: 0;
+        font-size: 16px;
+      }
     }
   }
 }

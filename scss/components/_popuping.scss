@@ -6,17 +6,23 @@
 
   header {
     height: 60px;
-    background-color: utility.$secondary-dark;
+    background-color: utility.$secondary-light;
     position: relative;
 
+    @media (min-width: 1024px) {
+      background-color: utility.$secondary-dark;
+    }
     h2 {
       margin: 0;
       color: white;
-      font-size: 16px;
+      font-size: 0;
       font-weight: 500;
       text-align: center;
       height: 60px;
       line-height: 60px;
+      @media (min-width: 1024px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -32,12 +38,17 @@
   .close {
     width: 20px;
     height: 20px;
-    background-image: url("../../images/Vector.png");
+    background-image: url("../../images/black-cross.png");
+
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 20px;
     left: 20px;
+
+    @media (min-width: 1024px) {
+      background-image: url("../../images/Vector.png");
+    }
 
     &--black {
       width: 20px;
@@ -53,7 +64,11 @@
 
   main {
     padding: 20px 40px;
-    background-color: #fff;
+    background-color: utility.$secondary-light;
+
+    @media (min-width: 1024px) {
+      background-color: #fff;
+    }
 
     .people {
       width: 200px;
