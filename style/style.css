@@ -95,17 +95,27 @@ a {
 }
 .popuping header {
   height: 60px;
-  background-color: #8dc1c7;
+  background-color: #e3eaea;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .popuping header {
+    background-color: #8dc1c7;
+  }
 }
 .popuping header h2 {
   margin: 0;
   color: white;
-  font-size: 16px;
+  font-size: 0;
   font-weight: 500;
   text-align: center;
   height: 60px;
   line-height: 60px;
+}
+@media (min-width: 1024px) {
+  .popuping header h2 {
+    font-size: 16px;
+  }
 }
 .popuping button {
   border: 1px solid transparent;
@@ -117,12 +127,17 @@ a {
 .popuping .close {
   width: 20px;
   height: 20px;
-  background-image: url("../../images/Vector.png");
+  background-image: url("../../images/black-cross.png");
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
   top: 20px;
   left: 20px;
+}
+@media (min-width: 1024px) {
+  .popuping .close {
+    background-image: url("../../images/Vector.png");
+  }
 }
 .popuping .close--black {
   width: 20px;
@@ -136,7 +151,12 @@ a {
 }
 .popuping main {
   padding: 20px 40px;
-  background-color: #fff;
+  background-color: #e3eaea;
+}
+@media (min-width: 1024px) {
+  .popuping main {
+    background-color: #fff;
+  }
 }
 .popuping main .people {
   width: 200px;
@@ -567,10 +587,15 @@ body {
 }
 
 .map-page {
-  height: 100vh;
-  padding-top: 185px;
-  flex-basis: 1003px;
-  position: relative;
+  padding-top: 30px;
+  flex-basis: 803px;
+  align-self: flex-start;
+}
+@media (min-width: 1920px) {
+  .map-page {
+    flex-basis: 1003px;
+    padding-top: 183px;
+  }
 }
 .map-page .map-container {
   position: relative;
@@ -587,7 +612,7 @@ body {
 }
 
 .instruct-sign {
-  transform: translateY(-30px);
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -600,15 +625,15 @@ body {
 
 @keyframes bounce {
   from {
-    transform: translateY(-30px);
+    transform: translateY(0px);
     animation-timing-function: ease-out;
   }
   50% {
-    transform: translateY(-33px);
+    transform: translateY(-3px);
     animation-timing-function: ease-in;
   }
   to {
-    transform: translateY(-30px);
+    transform: translateY(0px);
     animation-timing-function: ease-in-out;
   }
 }
