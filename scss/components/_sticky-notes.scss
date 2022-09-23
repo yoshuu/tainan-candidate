@@ -17,23 +17,27 @@
       margin-bottom: 33px;
     }
 
+    &-topic {
+      display: none;
+
+      @media (min-width: 992px) {
+        margin-top: 53px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr 3fr;
+
+        h3 {
+          font-size: 16px;
+          font-family: Noto Sans TC;
+          font-weight: 700;
+        }
+      }
+    }
+
     &-tablet {
       display: none;
 
       @media (min-width: 992px) {
         display: block;
-        margin-top: 53px;
-
-        .speech-record-topic {
-          display: grid;
-          grid-template-columns: 2fr 2fr 1fr 3fr;
-
-          h3 {
-            font-size: 16px;
-            font-family: Noto Sans TC;
-            font-weight: 700;
-          }
-        }
 
         .speech-record-content {
           display: grid;

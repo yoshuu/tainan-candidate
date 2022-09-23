@@ -236,22 +236,27 @@ dialog {
   text-align: center;
   margin-bottom: 33px;
 }
+.sticky-notes .speech-record-topic {
+  display: none;
+}
+@media (min-width: 992px) {
+  .sticky-notes .speech-record-topic {
+    margin-top: 53px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 3fr;
+  }
+  .sticky-notes .speech-record-topic h3 {
+    font-size: 16px;
+    font-family: Noto Sans TC;
+    font-weight: 700;
+  }
+}
 .sticky-notes .speech-record-tablet {
   display: none;
 }
 @media (min-width: 992px) {
   .sticky-notes .speech-record-tablet {
     display: block;
-    margin-top: 53px;
-  }
-  .sticky-notes .speech-record-tablet .speech-record-topic {
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr 3fr;
-  }
-  .sticky-notes .speech-record-tablet .speech-record-topic h3 {
-    font-size: 16px;
-    font-family: Noto Sans TC;
-    font-weight: 700;
   }
   .sticky-notes .speech-record-tablet .speech-record-content {
     display: grid;
