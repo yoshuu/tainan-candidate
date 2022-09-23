@@ -3,6 +3,7 @@ a {
 }
 
 .map-box {
+  align-self: flex-end;
   width: 153px;
   height: 130px;
   background-image: url(../../images/mapButton.png);
@@ -11,6 +12,13 @@ a {
   cursor: pointer;
 }
 @media (min-width: 1280px) {
+  .map-box {
+    position: absolute;
+    right: -150px;
+    top: 0;
+  }
+}
+@media (min-width: 1920px) {
   .map-box {
     width: 245px;
     height: 215px;
@@ -397,6 +405,9 @@ body {
   }
 }
 
+.tainan-container {
+  position: relative;
+}
 @media (min-width: 1280px) {
   .tainan-container {
     height: calc(100vh - 77px);
@@ -406,6 +417,7 @@ body {
 .tainan-three {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   overflow: hidden;
   transform: translateY(192px);
@@ -423,6 +435,7 @@ body {
 }
 .tainan-three .tainan-three-img {
   object-fit: contain;
+  align-self: center;
   height: 120%;
   width: 120%;
 }
@@ -467,24 +480,6 @@ body {
 }
 .tainan-three__people img {
   width: 100%;
-}
-
-.tainan-three-map-button {
-  position: absolute;
-  right: 20px;
-  top: 40px;
-}
-@media (min-width: 1280px) {
-  .tainan-three-map-button {
-    right: 15px;
-    top: 74px;
-  }
-}
-@media (min-width: 1920px) {
-  .tainan-three-map-button {
-    right: 120.7px;
-    top: 158px;
-  }
 }
 
 .tainan-people-party {

@@ -1,7 +1,7 @@
 @use "../utility";
 
 .tainan-container {
-  // position: relative;
+  position: relative;
   @media (min-width: 1280px) {
     height: calc(100vh - 77px);
     // overflow: hidden;
@@ -16,6 +16,7 @@
 .tainan-three {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   overflow: hidden;
   transform: translateY(192px);
@@ -33,11 +34,11 @@
 
   .tainan-three-img {
     object-fit: contain;
+    align-self: center;
     height: 120%;
     width: 120%;
 
     @media (min-width: 992px) {
-      // height: 100%;
       height: calc(100vh - 77px);
       width: 100%;
     }
@@ -92,23 +93,6 @@
     img {
       width: 100%;
     }
-  }
-}
-
-.tainan-three-map-button {
-  // 參照main container
-  position: absolute;
-  right: 20px;
-  top: 40px;
-
-  @media (min-width: 1280px) {
-    right: 15px;
-    top: 74px;
-  }
-
-  @media (min-width: 1920px) {
-    right: 120.7px;
-    top: 158px;
   }
 }
 

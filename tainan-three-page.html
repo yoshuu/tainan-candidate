@@ -114,6 +114,7 @@
       <div class="container p-0">
         <div class="tainan-container">
           <div class="tainan-three">
+            <div class="map-box"></div>
             <img
               class="tainan-three-img"
               src="./images/tainan-cadidate-without-name.png"
@@ -128,9 +129,6 @@
               <img src="./images/ping-name.png" alt="" />
             </div>
           </div>
-        </div>
-        <div class="tainan-three-map-button">
-          <div class="map-box"></div>
         </div>
         <dialog class="popuping kiang-dialog">
           <form method="dialog">
@@ -303,9 +301,7 @@
         pingDialog.showModal();
       });
 
-      const streetSpeechBtn = document.querySelector(
-        ".tainan-three-map-button"
-      );
+      const streetSpeechBtn = document.querySelector(".map-box");
       const streetSpeechDialog = document.querySelector(".street-speech");
 
       streetSpeechBtn.addEventListener("click", function (e) {
