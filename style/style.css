@@ -14,14 +14,16 @@ a {
 @media (min-width: 1280px) {
   .map-box {
     position: absolute;
-    right: -150px;
-    top: 0;
+    right: -147px;
+    top: 85px;
   }
 }
 @media (min-width: 1920px) {
   .map-box {
     width: 245px;
     height: 215px;
+    right: -250px;
+    top: 141px;
   }
 }
 .map-box:hover {
@@ -440,7 +442,12 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  transform: translateY(192px);
+  transform: translateY(40px);
+}
+@media (min-width: 992px) {
+  .tainan-three {
+    transform: translateY(100px);
+  }
 }
 @media (min-width: 1280px) {
   .tainan-three {
@@ -470,46 +477,6 @@ body {
     height: 100%;
     width: 100%;
   }
-}
-.tainan-three__outer-circle {
-  position: relative;
-  transform: translateY(48px);
-}
-.tainan-three__outer-circle img {
-  width: 100%;
-}
-.tainan-three__outer-circle:hover .people-name {
-  transform: translateY(3px);
-}
-.tainan-three__inner-circle {
-  position: absolute;
-  top: 32.28px;
-  left: 32.28px;
-  right: 32.28px;
-  bottom: 32.28px;
-}
-.tainan-three__inner-circle img {
-  width: 100%;
-}
-.tainan-three__people {
-  position: absolute;
-  top: 359.99px;
-  left: 137.47px;
-  bottom: 194.76px;
-  right: 157.82px;
-}
-.tainan-three__people img {
-  width: 100%;
-}
-
-.tainan-people-party {
-  position: absolute;
-  top: 91.46px;
-  left: 456.83px;
-  right: 467.59px;
-}
-.tainan-people-party img {
-  width: 100%;
 }
 
 .people-name {
