@@ -1,9 +1,10 @@
 .past-record-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   min-width: 375px;
-  padding: 20px;
+  padding: 40px;
+  gap: 41px;
 
   @media (min-width: 768px) {
     max-width: 1200px;
@@ -13,9 +14,8 @@
 }
 .toggle-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     flex-direction: column;

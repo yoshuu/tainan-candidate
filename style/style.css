@@ -1,6 +1,15 @@
 a {
   text-decoration: none;
 }
+a:hover {
+  color: unset;
+}
+
+p,
+h2,
+h3 {
+  margin: 0;
+}
 
 .map-box {
   align-self: flex-end;
@@ -53,6 +62,21 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 23.17px;
+}
+
+.tags {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #28c8c8;
+  border-radius: 4px;
+}
+.tags:hover {
+  background-color: #50a5a4;
+  color: #fff;
 }
 
 .declaration {
@@ -204,69 +228,73 @@ dialog {
   font-family: Noto Sans TC;
 }
 .sticky-notes .speech-record {
-  padding: 20px;
+  padding: 24px 40px;
 }
 .sticky-notes .speech-record h2 {
-  margin-bottom: 33px;
-  font-size: 16px;
+  font-size: 36px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 33px;
 }
-.sticky-notes .speech-record .speech-record-content + .speech-record-content {
-  margin-top: 20px;
-}
-.sticky-notes .speech-record .speech-record-content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.sticky-notes .speech-record .speech-record-content div > div {
-  margin-bottom: 10px;
-}
-.sticky-notes .speech-record .speech-record-content .upper-theme,
-.sticky-notes .speech-record .speech-record-content .item {
-  display: inline-block;
-  font-size: 14px;
-}
-.sticky-notes .speech-record .speech-record-content .upper-theme {
-  font-size: 14px;
-  font-weight: 700;
-  margin-right: 24px;
-}
-.sticky-notes .speech-record .speech-record-content .item {
-  font-weight: 400;
-  width: 70%;
-}
-.sticky-notes .speech-record .speech-record-content .item .resources-PC {
+.sticky-notes .speech-record-tablet {
   display: none;
 }
-.sticky-notes .speech-record .speech-record-content .resources {
-  font-size: 0;
+@media (min-width: 992px) {
+  .sticky-notes .speech-record-tablet {
+    display: block;
+    margin-top: 53px;
+  }
+  .sticky-notes .speech-record-tablet .speech-record-topic {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 3fr;
+  }
+  .sticky-notes .speech-record-tablet .speech-record-topic h3 {
+    font-size: 16px;
+    font-family: Noto Sans TC;
+    font-weight: 700;
+  }
+  .sticky-notes .speech-record-tablet .speech-record-content {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 3fr;
+    padding: 20px 0;
+    border-bottom: rgba(0, 0, 0, 0.1019607843) 1px solid;
+  }
+  .sticky-notes .speech-record-tablet .speech-record-content .resources-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-.sticky-notes .speech-record .speech-record-content .resources a + a {
-  margin-left: 9px;
+.sticky-notes .speech-record-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-bottom: rgba(0, 0, 0, 0.1019607843) 1px solid;
+  padding-bottom: 20px;
 }
-.sticky-notes .speech-record .speech-record-content .Slideshow-download,
-.sticky-notes .speech-record .speech-record-content .video-download {
-  display: inline-block;
-  padding: 10px 15px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  background-color: #28c8c8;
-  border-radius: 4px;
+@media (min-width: 992px) {
+  .sticky-notes .speech-record-mobile {
+    display: none;
+  }
 }
-.sticky-notes .speech-record .speech-record-content .Down {
-  height: 1px;
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.1019607843);
+.sticky-notes .speech-record-mobile h3 {
+  font-size: 16px;
+  font-family: Noto Sans TC;
+  font-weight: 700;
 }
-.sticky-notes .speech-record .speech-record-content .Down {
-  width: 100%;
-  height: 1px;
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.1019607843);
+.sticky-notes .speech-record-mobile .speech-record-topicNcontent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.sticky-notes .speech-record-mobile .speech-record-resources-topicNcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sticky-notes .speech-record-mobile .speech-record-resources-topicNcontent .resources-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .navbar-laptop {
@@ -607,9 +635,10 @@ body {
 .past-record-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   min-width: 375px;
-  padding: 20px;
+  padding: 40px;
+  gap: 41px;
 }
 @media (min-width: 768px) {
   .past-record-container {
@@ -621,9 +650,8 @@ body {
 
 .toggle-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
 }
 @media (min-width: 768px) {
   .toggle-box {
