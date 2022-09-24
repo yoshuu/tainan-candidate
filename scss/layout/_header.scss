@@ -2,15 +2,14 @@
 
 .navbar-laptop {
   display: none;
-  @media (min-width: 1028px) {
+  @media (min-width: 992px) {
     display: flex;
-    
   }
 }
 
 .navbar-mobile {
   display: block;
-  @media (min-width: 1028px) {
+  @media (min-width: 992px) {
     display: none;
   }
   .brand-container {
@@ -56,13 +55,17 @@ header .container .navbar {
 .container .navbar-expand-lg .navbar-nav .nav-link {
   font-family: Noto Sans TC;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 14px;
   color: black;
   padding: 15px 20px;
 
   &:hover {
     background-color: #30363a;
     color: white;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 18px;
   }
 }
 

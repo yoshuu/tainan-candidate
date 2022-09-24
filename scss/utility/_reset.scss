@@ -1,6 +1,11 @@
 a {
   text-decoration: none;
+
+  &:hover {
+    color: unset;
+  }
 }
+
 p,
 h2,
 h3 {

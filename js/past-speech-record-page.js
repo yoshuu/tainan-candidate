@@ -8,11 +8,19 @@ function addSpeechRecord(recordArray, recordContainer) {
     .map((record, index) => {
       const ytVideosHTMLStrings = record.ytVideos
         .map((video) => {
-          return `
-          <a href="${video.link}" class="tags">影片連結</a>
-          `;
+          return `<a href="${video.link}" class="tags">影片連結</a>`;
         })
         .join("");
+      const ifNoYtVideosOne =
+        record.ytVideos.length === 1
+          ? `<a href="#" class="tags">影片連結</a>`
+          : "";
+
+      const ifNoYtVideosZero =
+        record.ytVideos.length === 0
+          ? `<a href="#" class="tags">影片連結</a>
+          <a href="#" class="tags">影片連結</a>`
+          : "";
 
       return `<div class="speech-record-tablet">
                 <div class="speech-record-content ${index}">
@@ -22,6 +30,8 @@ function addSpeechRecord(recordArray, recordContainer) {
                   <div class="resources-content">
                     <a href="${record.slides.link}" class="tags">投影片下載</a>
                     ${ytVideosHTMLStrings}
+                    ${ifNoYtVideosOne}
+                    ${ifNoYtVideosZero}
                   </div>
                 </div>
               </div>
@@ -43,7 +53,8 @@ function addSpeechRecord(recordArray, recordContainer) {
                   <div class="resources-content">
                     <a href="${record.slides.link}" class="tags">投影片下載</a>
                     ${ytVideosHTMLStrings}
-              
+                    ${ifNoYtVideosOne}
+                    ${ifNoYtVideosZero}
                   </div>
                 </div>
               </div>`;
@@ -52,5 +63,3 @@ function addSpeechRecord(recordArray, recordContainer) {
 }
 
 addSpeechRecord(copyPastSpeechData, speechContainer);
-
-console.log(copyPastSpeechData[0].ytVideos[0].link);

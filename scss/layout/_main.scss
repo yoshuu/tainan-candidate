@@ -1,6 +1,39 @@
-main .container {
-  // 規定全部要變成都在一頁完成的
+.district-map-page .container {
+  @media (min-width: 992px) {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.tainan-three-page .container {
+  @media (min-width: 992px) {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-page .container {
+  @media (min-width: 992px) {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.record-of-street-map-page .container {
   @media (min-width: 992px) {
     height: calc(100vh - 77px);
     overflow: hidden;

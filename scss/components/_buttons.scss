@@ -9,8 +9,8 @@
 
   @media (min-width: 1280px) {
     position: absolute;
-    right: -150px;
-    top: 0;
+    right: -147px;
+    top: 85px;
     // width: 220px;
     // height: 220px;
   }
@@ -18,6 +18,8 @@
   @media (min-width: 1920px) {
     width: 245px;
     height: 215px;
+    right: -250px;
+    top: 141px;
   }
   background-image: url(../../images/mapButton.png);
   background-size: contain;
