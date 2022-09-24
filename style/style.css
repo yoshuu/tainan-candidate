@@ -552,6 +552,12 @@ header {
   background-color: #f4f4ee;
 }
 
+.district-map-page .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 992px) {
   .district-map-page .container {
     height: calc(100vh - 77px);
