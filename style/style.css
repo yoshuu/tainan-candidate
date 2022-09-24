@@ -9,6 +9,7 @@ h3 {
 }
 
 .map-box {
+  align-self: flex-end;
   width: 153px;
   height: 130px;
   background-image: url(../../images/mapButton.png);
@@ -17,6 +18,13 @@ h3 {
   cursor: pointer;
 }
 @media (min-width: 1280px) {
+  .map-box {
+    position: absolute;
+    right: -150px;
+    top: 0;
+  }
+}
+@media (min-width: 1920px) {
   .map-box {
     width: 245px;
     height: 215px;
@@ -83,14 +91,21 @@ h3 {
   bottom: -30px;
   right: -40px;
 }
-.declaration .content {
+.declaration .content-container {
+  height: calc(100vh - 200px);
+  overflow: scroll;
   padding: 40px;
 }
-.declaration .content h2 {
+@media (min-width: 1920px) {
+  .declaration .content-container {
+    height: initial;
+  }
+}
+.declaration .content-container .content h2 {
   margin-bottom: 24px;
   font-size: 26px;
 }
-.declaration .content p {
+.declaration .content-container .content p {
   margin: 0;
   font-size: 16px;
 }
@@ -101,17 +116,27 @@ h3 {
 }
 .popuping header {
   height: 60px;
-  background-color: #8dc1c7;
+  background-color: #e3eaea;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .popuping header {
+    background-color: #8dc1c7;
+  }
 }
 .popuping header h2 {
   margin: 0;
   color: white;
-  font-size: 16px;
+  font-size: 0;
   font-weight: 500;
   text-align: center;
   height: 60px;
   line-height: 60px;
+}
+@media (min-width: 1024px) {
+  .popuping header h2 {
+    font-size: 16px;
+  }
 }
 .popuping button {
   border: 1px solid transparent;
@@ -123,12 +148,17 @@ h3 {
 .popuping .close {
   width: 20px;
   height: 20px;
-  background-image: url("../../images/Vector.png");
+  background-image: url("../../images/black-cross.png");
   background-size: 100%;
   background-repeat: no-repeat;
   position: absolute;
   top: 20px;
   left: 20px;
+}
+@media (min-width: 1024px) {
+  .popuping .close {
+    background-image: url("../../images/Vector.png");
+  }
 }
 .popuping .close--black {
   width: 20px;
@@ -142,7 +172,12 @@ h3 {
 }
 .popuping main {
   padding: 20px 40px;
-  background-color: #fff;
+  background-color: #e3eaea;
+}
+@media (min-width: 1024px) {
+  .popuping main {
+    background-color: #fff;
+  }
 }
 .popuping main .people {
   width: 200px;
@@ -513,6 +548,12 @@ main .container {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 992px) {
+  main .container {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
+}
 
 .container {
   max-width: 1920px;
@@ -525,11 +566,7 @@ body {
 
 .front-page-container {
   display: flex;
-}
-@media (min-width: 1920px) {
-  .front-page-container {
-    height: calc(100vh - 77px);
-  }
+  height: calc(100vh - 77px);
 }
 
 .candidate {
@@ -540,73 +577,96 @@ body {
 
 .candidate-image {
   position: relative;
-  align-self: flex-end;
+  align-self: center;
+}
+@media (min-width: 992px) {
+  .candidate-image {
+    align-self: flex-end;
+  }
 }
 .candidate-image img {
   object-fit: contain;
   width: 100%;
+  height: calc(100vh - 77px);
 }
 
 .candidate-information {
   display: none;
 }
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .candidate-information {
     display: block;
     align-self: center;
     flex-basis: 880px;
   }
 }
+@media (min-width: 1920px) {
+  .candidate-information {
+    height: initial;
+  }
+}
 
 .candidate-about-me-button {
   position: absolute;
-  left: 200px;
+  left: 170px;
   top: 50px;
+}
+@media (min-width: 400px) {
+  .candidate-about-me-button {
+    left: 235px;
+  }
 }
 .candidate-about-me-button img {
   width: 100%;
 }
-@media (min-width: 400px) {
-  .candidate-about-me-button {
-    left: 300px;
-  }
-}
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
   .candidate-about-me-button {
     display: none;
   }
 }
 
+.tainan-container {
+  position: relative;
+}
 @media (min-width: 1280px) {
   .tainan-container {
-    overflow: hidden;
-    height: 1028px;
-  }
-}
-@media (min-width: 1920px) {
-  .tainan-container {
-    height: calc(100vh - 48px);
+    height: calc(100vh - 77px);
   }
 }
 
 .tainan-three {
+  position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 182px;
   overflow: hidden;
+  transform: translateY(192px);
 }
 @media (min-width: 1280px) {
   .tainan-three {
-    padding-top: 48px;
+    overflow: initial;
+    transform: translateY(103px);
   }
 }
-.tainan-three img {
+@media (min-width: 1920px) {
+  .tainan-three {
+    transform: translateY(27px);
+  }
+}
+.tainan-three .tainan-three-img {
   object-fit: contain;
+  align-self: center;
   height: 120%;
   width: 120%;
 }
-@media (min-width: 1280px) {
-  .tainan-three img {
+@media (min-width: 992px) {
+  .tainan-three .tainan-three-img {
+    height: calc(100vh - 77px);
+    width: 100%;
+  }
+}
+@media (min-width: 1920px) {
+  .tainan-three .tainan-three-img {
     height: 100%;
     width: 100%;
   }
@@ -642,24 +702,6 @@ body {
   width: 100%;
 }
 
-.tainan-three-map-button {
-  position: absolute;
-  right: 20px;
-  top: 40px;
-}
-@media (min-width: 1280px) {
-  .tainan-three-map-button {
-    right: 15px;
-    top: 74px;
-  }
-}
-@media (min-width: 1920px) {
-  .tainan-three-map-button {
-    right: 120.7px;
-    top: 158px;
-  }
-}
-
 .tainan-people-party {
   position: absolute;
   top: 91.46px;
@@ -671,34 +713,89 @@ body {
 }
 
 .people-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 126.26px;
-  height: 56.04px;
   position: absolute;
+  cursor: pointer;
 }
 
 .kiang-name {
-  left: 828.6px;
-  top: 798.01px;
+  top: 70%;
+  left: 73%;
+}
+.kiang-name img {
+  width: 70%;
+  height: 70%;
+}
+@media (min-width: 576px) {
+  .kiang-name img {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (min-width: 1920px) {
+  .kiang-name img {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .kuo-name {
-  left: 497.8px;
-  top: 718.1px;
+  top: 66%;
+  left: 42%;
+}
+@media (min-width: 1920px) {
+  .kuo-name {
+    top: 66%;
+    left: 44%;
+  }
+}
+.kuo-name img {
+  width: 40%;
+  height: 40%;
+}
+@media (min-width: 576px) {
+  .kuo-name img {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (min-width: 1920px) {
+  .kuo-name img {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .ping-name {
-  left: 112.49px;
-  top: 803.9px;
+  top: 70%;
+  left: 13%;
+}
+.ping-name img {
+  width: 40%;
+  height: 40%;
+}
+@media (min-width: 576px) {
+  .ping-name img {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (min-width: 1920px) {
+  .ping-name img {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .map-page {
-  height: 100vh;
-  padding-top: 185px;
-  flex-basis: 1003px;
-  position: relative;
+  padding-top: 30px;
+  flex-basis: 803px;
+  align-self: flex-start;
+}
+@media (min-width: 1920px) {
+  .map-page {
+    flex-basis: 1003px;
+    padding-top: 183px;
+  }
 }
 .map-page .map-container {
   position: relative;
@@ -715,7 +812,7 @@ body {
 }
 
 .instruct-sign {
-  transform: translateY(-30px);
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -728,15 +825,15 @@ body {
 
 @keyframes bounce {
   from {
-    transform: translateY(-30px);
+    transform: translateY(0px);
     animation-timing-function: ease-out;
   }
   50% {
-    transform: translateY(-33px);
+    transform: translateY(-3px);
     animation-timing-function: ease-in;
   }
   to {
-    transform: translateY(-30px);
+    transform: translateY(0px);
     animation-timing-function: ease-in-out;
   }
 }
