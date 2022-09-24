@@ -227,6 +227,12 @@ dialog {
   background: linear-gradient(to right bottom, transparent 50%, #fff 0) no-repeat 0% 0/50px 50px, linear-gradient(135deg, transparent 35px, rgba(255, 255, 255, 0.8) 0);
   font-family: Noto Sans TC;
 }
+@media (min-width: 992px) {
+  .sticky-notes {
+    background: linear-gradient(to right bottom, transparent 50%, #fff 0) no-repeat 0% 0/100px 100px, linear-gradient(135deg, transparent 70px, rgba(255, 255, 255, 0.8) 0);
+    width: 977px;
+  }
+}
 .sticky-notes .speech-record {
   padding: 24px 40px;
 }
@@ -655,16 +661,17 @@ body {
 .past-record-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   min-width: 375px;
-  padding: 40px;
+  padding: 20px;
   gap: 41px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .past-record-container {
-    max-width: 1200px;
-    margin: 0 auto;
     flex-direction: row;
+    padding: 40px;
   }
 }
 
@@ -678,7 +685,6 @@ body {
     flex-direction: column;
     align-self: flex-start;
     width: 233px;
-    margin-right: 41px;
   }
 }
 @media (min-width: 768px) {

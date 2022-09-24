@@ -7,6 +7,13 @@
     linear-gradient(135deg, transparent 35px, #ffffffcc 0);
   font-family: Noto Sans TC;
 
+  @media (min-width: 992px) {
+    background: linear-gradient(to right bottom, transparent 50%, #fff 0)
+        no-repeat 0% 0 / 100px 100px,
+      linear-gradient(135deg, transparent 70px, #ffffffcc 0);
+    width: 977px;
+  }
+
   .speech-record {
     padding: 24px 40px;
 
@@ -24,6 +31,8 @@
       font-size: 14px;
       font-weight: 500;
     }
+
+    // 針對past-speech-record
 
     &-topic {
       display: none;
@@ -98,78 +107,4 @@
       }
     }
   }
-
-  // @media (min-width: 768px) {
-  //   .speech-record {
-  //     .resources {
-  //       display: none;
-  //     }
-  //     padding: 24px 40px 40px 40px;
-
-  //     h2 {
-  //       margin-bottom: 53px;
-  //       font-size: 36px;
-  //       font-weight: 700;
-  //       text-align: center;
-  //     }
-  //     .upper-theme {
-  //       display: flex;
-
-  //       font-size: 16px;
-  //       font-weight: 700;
-
-  //       .activity-theme,
-  //       .event-name {
-  //         margin-right: 176px;
-  //       }
-  //       .date {
-  //         margin-right: 73px;
-  //       }
-  //     }
-
-  //     .item {
-  //       margin-top: 20px;
-  //       .item-content {
-  //         display: flex;
-  //         font-size: 14px;
-  //         font-weight: 500;
-
-  //         .activity-theme,
-  //         .event-name {
-  //           width: 200px;
-  //           height: 40px;
-  //           margin-right: 40px;
-  //         }
-
-  //         .date {
-  //           width: 105px;
-  //           height: 40px;
-  //         }
-  //         .resources-PC {
-  //           font-size: 0;
-  //           .Slideshow-download,
-  //           .video-download {
-  //             display: inline-block;
-  //             padding: 10px 15px;
-  //             text-decoration: none;
-  //             font-size: 14px;
-  //             font-weight: 500;
-  //             color: #fff;
-  //             background-color: #28c8c8;
-  //             border-radius: 4px;
-  //           }
-  //         }
-
-  //         .resources {
-  //           display: none;
-  //         }
-  //       }
-  //       .Down {
-  //         height: 1px;
-  //         margin-top: 20px;
-  //         background-color: #fff;
-  //       }
-  //     }
-  //   }
-  // }
 }
