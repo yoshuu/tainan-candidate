@@ -3,12 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 375px;
+  // min-width: 375px;
+  width: 100%;
   padding: 20px;
   gap: 41px;
-  width: 100%;
 
   @media (min-width: 768px) {
+    // max-width: 1200px;
+    justify-content: center;
     flex-direction: row;
     padding: 40px;
   }
@@ -18,11 +20,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  // margin-bottom: 20px;
 
   @media (min-width: 768px) {
     flex-direction: column;
     align-self: flex-start;
     width: 233px;
+    // margin-right: 41px;
   }
   @media (min-width: 768px) {
     a + a {
@@ -33,80 +37,28 @@
   .toggle-speech-record,
   .toggle-past-works,
   .toggle-related-news {
-    display: inline-block;
-    width: 98px;
-    height: 53px;
-    cursor: pointer;
-    background-size: contain;
-    background-repeat: no-repeat;
-
+    min-width: 98px;
+    min-height: 53px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #30363a;
+    background-color: #e3eaea;
+    border: 5px solid #a7ced4;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    &:hover {
+      color: #fff;
+      background-color: #a7ced4;
+      border: 5px solid #e3eaea;
+    }
     @media (min-width: 768px) {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
       width: 182px;
       height: 80px;
-    }
-    &:hover {
-      width: 98px;
-      height: 53px;
-      cursor: pointer;
-      background-size: contain;
-      background-repeat: no-repeat;
-      @media (min-width: 768px) {
-        width: 182px;
-        height: 80px;
-      }
-    }
-  }
-
-  .toggle-past-works {
-    background-image: url(../../images/past-works.png);
-
-    &:hover {
-      background-image: url(../../images/past-works-dark.png);
-    }
-  }
-
-  @media (min-width: 768px) {
-    .toggle-past-works {
-      background-image: url(../../images/past-works-big.png);
-
-      &:hover {
-        background-image: url(../../images/past-works-big-dark.png);
-      }
-    }
-  }
-
-  .toggle-speech-record {
-    background-image: url(../../images/speech-record.png);
-
-    &:hover {
-      background-image: url(../../images/speech-record-dark.png);
-    }
-  }
-
-  @media (min-width: 768px) {
-    .toggle-speech-record {
-      background-image: url(../../images/speech-record-big-new.png);
-
-      &:hover {
-        background-image: url(../../images/speech-record-big-dark-new.png);
-      }
-    }
-  }
-
-  .toggle-related-news {
-    background-image: url(../../images/related-news.png);
-
-    &:hover {
-      background-image: url(../../images/related-news-dark.png);
-    }
-  }
-  @media (min-width: 768px) {
-    .toggle-related-news {
-      background-image: url(../../images/related-news-big-new.png);
-
-      &:hover {
-        background-image: url(../../images/related-news-big-dark-new.png);
-      }
+      line-height: 50px;
     }
   }
 }
