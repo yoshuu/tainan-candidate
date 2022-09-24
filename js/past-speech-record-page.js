@@ -8,18 +8,18 @@ function addSpeechRecord(recordArray, recordContainer) {
     .map((record, index) => {
       const ytVideosHTMLStrings = record.ytVideos
         .map((video) => {
-          return `<a href="${video.link}" class="tags">影片連結</a>`;
+          return `<a target="_blank" href="${video.link}" class="tags">影片連結</a>`;
         })
         .join("");
       const ifNoYtVideosOne =
         record.ytVideos.length === 1
-          ? `<a href="#" class="tags">影片連結</a>`
+          ? `<a target="_blank" href="#" class="tags">影片連結</a>`
           : "";
 
       const ifNoYtVideosZero =
         record.ytVideos.length === 0
-          ? `<a href="#" class="tags">影片連結</a>
-          <a href="#" class="tags">影片連結</a>`
+          ? `<a href="#" target="_blank" class="tags">影片連結</a>
+          <a href="#" target="_blank" class="tags">影片連結</a>`
           : "";
 
       return `<div class="speech-record-tablet">
@@ -28,7 +28,7 @@ function addSpeechRecord(recordArray, recordContainer) {
                   <p>${record.active}</p>
                   <p>${record.date}</p>
                   <div class="resources-content">
-                    <a href="${record.slides.link}" class="tags">投影片下載</a>
+                    <a target="_blank" href="${record.slides.link}" class="tags">投影片下載</a>
                     ${ytVideosHTMLStrings}
                     ${ifNoYtVideosOne}
                     ${ifNoYtVideosZero}
@@ -51,7 +51,7 @@ function addSpeechRecord(recordArray, recordContainer) {
                 <div class="speech-record-resources-topicNcontent">
                   <h3>相關資源</h3>
                   <div class="resources-content">
-                    <a href="${record.slides.link}" class="tags">投影片下載</a>
+                    <a target="_blank" href="${record.slides.link}" class="tags">投影片下載</a>
                     ${ytVideosHTMLStrings}
                     ${ifNoYtVideosOne}
                     ${ifNoYtVideosZero}
