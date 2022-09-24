@@ -398,14 +398,47 @@ header {
   background-color: #f4f4ee;
 }
 
-main .container {
+@media (min-width: 992px) {
+  .district-map-page .container {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
+}
+
+.tainan-three-page .container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 992px) {
-  main .container {
+  .tainan-three-page .container {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
+}
+
+.front-page .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .front-page .container {
+    height: calc(100vh - 77px);
+    overflow: hidden;
+  }
+}
+
+.record-of-street-map-page .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .record-of-street-map-page .container {
     height: calc(100vh - 77px);
     overflow: hidden;
   }
