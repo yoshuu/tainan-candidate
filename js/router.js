@@ -4,7 +4,11 @@ const page2 = document.querySelector(".district-map-page");
 const page3 = document.querySelector(".record-of-street-map-page");
 const page4 = document.querySelector(".past-record-page");
 const page5 = document.querySelector(".tainan-three-page");
-console.log(location.hash);
+
+// 過往紀錄的另外兩個頁面
+const page6 = document.querySelector(".past-works-page");
+const page7 = document.querySelector(".related-news-page");
+
 changePage(location.hash);
 
 window.addEventListener("hashchange", function () {
@@ -25,5 +29,9 @@ function changePage(hash) {
     page4.style.display = "block";
   } else if (hash === "#tainan-three-page") {
     page5.style.display = "block";
+  } else if (hash === "#past-works-page") {
+    page6.style.display = "block";
+  } else if (hash === "#related-news-page") {
+    page7.style.display = "block";
   }
 }
