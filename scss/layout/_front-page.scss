@@ -6,7 +6,13 @@
 .candidate {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  // flex-direction: column;
+  // justify-content: space-around;
+
+  @media (min-width: 992px) {
+    justify-content: space-around;
+    flex-direction: row;
+  }
 }
 
 .candidate-image {
@@ -48,7 +54,7 @@
   }
 
   @media (min-width: 500px) {
-    // left: 300px;
+    left: 300px;
   }
 
   img {

@@ -22,13 +22,13 @@ function addSpeechRecord(recordArray, recordContainer) {
           <a href="#" target="_blank" class="tags">影片連結</a>`
           : "";
 
-      return `<div class="speech-record-tablet">
+      return `<div class="speech-record-desktop">
                 <div class="speech-record-content ${index}">
                   <p>${record.slides.title}</p>
                   <p>${record.active}</p>
                   <p>${record.date}</p>
                   <div class="resources-content">
-                    <a target="_blank" href="${record.slides.link}" class="tags">投影片下載</a>
+                    <a target="_blank" href="${record.slides.link}" class="tags" download>投影片下載</a>
                     ${ytVideosHTMLStrings}
                     ${ifNoYtVideosOne}
                     ${ifNoYtVideosZero}
@@ -51,7 +51,7 @@ function addSpeechRecord(recordArray, recordContainer) {
                 <div class="speech-record-resources-topicNcontent">
                   <h3>相關資源</h3>
                   <div class="resources-content">
-                    <a target="_blank" href="${record.slides.link}" class="tags">投影片下載</a>
+                    <a target="_blank" href="${record.slides.link}" class="tags" download>投影片下載</a>
                     ${ytVideosHTMLStrings}
                     ${ifNoYtVideosOne}
                     ${ifNoYtVideosZero}
