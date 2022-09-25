@@ -653,6 +653,7 @@ body {
 }
 
 .candidate-about-me-button {
+  cursor: pointer;
   position: absolute;
   left: 170px;
   top: 50px;
@@ -660,11 +661,6 @@ body {
 @media (min-width: 400px) {
   .candidate-about-me-button {
     left: 235px;
-  }
-}
-@media (min-width: 500px) {
-  .candidate-about-me-button {
-    left: 300px;
   }
 }
 .candidate-about-me-button img {

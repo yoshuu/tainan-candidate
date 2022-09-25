@@ -39,6 +39,7 @@
   }
 }
 .candidate-about-me-button {
+  cursor: pointer;
   position: absolute;
   // button會因為畫面小距離不變的話會消失
   left: 170px;
@@ -48,9 +49,9 @@
     left: 235px;
   }
 
-  @media (min-width: 500px) {
-    left: 300px;
-  }
+  // @media (min-width: 500px) {
+  //   left: 300px;
+  // }
 
   img {
     width: 100%;

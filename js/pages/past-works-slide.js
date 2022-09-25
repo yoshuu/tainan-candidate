@@ -1,10 +1,5 @@
 import { githubWorksData } from "../data/past-works-data.js";
 
-// masonry
-$(".past-works").masonry({
-  itemSelector: ".project",
-});
-
 // rendering
 
 const copyGithubWorksData = JSON.parse(JSON.stringify(githubWorksData));
@@ -36,3 +31,8 @@ function renderPastWorks(pastWorksArray, pastWorksContainer) {
 }
 
 renderPastWorks(copyGithubWorksData, pastWorksContainer);
+
+// masonry
+$(".past-works").masonry({
+  itemSelector: ".project",
+});
