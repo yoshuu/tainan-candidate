@@ -1,4 +1,4 @@
-import { githubWorksData } from "./past-works-data.js";
+import { githubWorksData } from "../data/past-works-data.js";
 
 // masonry
 $(".past-works").masonry({
