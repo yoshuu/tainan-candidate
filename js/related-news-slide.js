@@ -1,4 +1,4 @@
-import { relatedNewsData } from "./news.js";
+import { relatedNewsData } from "./related-news-data.js";
 
 const copyRelatedNewsData = JSON.parse(JSON.stringify(relatedNewsData));
 

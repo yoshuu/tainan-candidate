@@ -1,7 +1,7 @@
 export const githubWorksData = [
   {
     portfolio: {
-      imgUrl: "img/covid19.png",
+      imgUrl: "kiang-github/img/covid19.png",
       title: "台灣 Covid-19 本土病例地圖",
       link: "https://kiang.github.io/covid19/",
     },
@@ -156,7 +156,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/pharmacies.png",
+      imgUrl: "kiang-github/img/pharmacies.png",
       title: "藥局口罩採購地圖",
       link: "https://kiang.github.io/pharmacies/",
     },
@@ -386,7 +386,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/antigen.png",
+      imgUrl: "kiang-github/img/antigen.png",
       title: "家用快篩地圖",
       link: "https://kiang.github.io/antigen/",
     },
@@ -410,7 +410,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/foodlover.png",
+      imgUrl: "kiang-github/img/foodlover.png",
       title: "好食券地圖",
       link: "https://kiang.github.io/foodlover/",
     },
@@ -564,7 +564,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/salary.png",
+      imgUrl: "kiang-github/img/salary.png",
       title: "台灣所得地圖",
       link: "https://kiang.github.io/salary/map/",
     },
@@ -618,7 +618,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/air_raid_shelter.png",
+      imgUrl: "kiang-github/img/air_raid_shelter.png",
       title: "防空疏散避難地圖",
       link: "https://kiang.github.io/air_raid_shelter/",
     },
@@ -699,7 +699,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/preschools.jpeg",
+      imgUrl: "kiang-github/img/preschools.jpeg",
       title: "台灣幼兒園地圖",
       link: "https://kiang.github.io/preschools/",
     },
@@ -723,7 +723,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/taiwanpork.png",
+      imgUrl: "kiang-github/img/taiwanpork.png",
       title: "臺灣豬證明標章地圖",
       link: "https://kiang.github.io/taiwanpork/",
     },
@@ -764,7 +764,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/covid19-kr-masks.png",
+      imgUrl: "kiang-github/img/covid19-kr-masks.png",
       title: "Mask Map for South Korea",
       link: "https://kiang.github.io/covid19-kr-masks/",
     },
@@ -794,7 +794,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/bribes.png",
+      imgUrl: "kiang-github/img/bribes.png",
       title: "台灣賄選實價登錄地圖",
       link: "https://kiang.github.io/bribes_map/",
     },
@@ -813,7 +813,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/chimney_map.png",
+      imgUrl: "kiang-github/img/chimney_map.png",
       title: "固定污染源管制地圖",
       link: "https://kiang.github.io/chimney_map/",
     },
@@ -837,7 +837,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/TainanDengueMap.png",
+      imgUrl: "kiang-github/img/TainanDengueMap.png",
       title: "登革熱地圖",
       link: "https://kiang.github.io/TainanDengueMap/",
     },
@@ -872,7 +872,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/mosindex.png",
+      imgUrl: "kiang-github/img/mosindex.png",
       title: "登革熱病媒蚊指數地圖",
       link: "https://kiang.github.io/TainanDengueMap/mosindex/",
     },
@@ -886,7 +886,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/lead_pipes.png",
+      imgUrl: "kiang-github/img/lead_pipes.png",
       title: "鉛管分佈地圖",
       link: "https://kiang.github.io/lead_pipes/",
     },
@@ -920,7 +920,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/elections.png",
+      imgUrl: "kiang-github/img/elections.png",
       title: "選舉黃頁",
       link: "http://k.olc.tw/elections/",
     },
@@ -955,7 +955,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/flooding.png",
+      imgUrl: "kiang-github/img/flooding.png",
       title: "臺灣淹水地圖",
       link: "https://kiang.github.io/flooding/",
     },
@@ -970,7 +970,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/government_procurement_act.png",
+      imgUrl: "kiang-github/img/government_procurement_act.png",
       title: "政府採購法105基礎班線上測驗",
       link: "https://kiang.github.io/government_procurement_act/",
     },
@@ -978,7 +978,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_house_tax.png",
+      imgUrl: "kiang-github/img/tainan_house_tax.png",
       title: "臺南市房屋稅概算",
       link: "https://kiang.github.io/tainan_house_tax/",
     },
@@ -986,7 +986,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_nightmarket.png",
+      imgUrl: "kiang-github/img/tainan_nightmarket.png",
       title: "台南夜市地圖",
       link: "https://kiang.github.io/tainan_basecode/nightmarket/",
     },
@@ -994,7 +994,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/taipower.png",
+      imgUrl: "kiang-github/img/taipower.png",
       title: "台灣用電地圖",
       link: "https://kiang.github.io/taipower/",
     },
@@ -1002,7 +1002,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan-garbage-truck.png",
+      imgUrl: "kiang-github/img/tainan-garbage-truck.png",
       title: "台南市垃圾清運地圖",
       link: "https://kiang.github.io/tainan-garbage-truck/",
     },
@@ -1010,7 +1010,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/sunshine.png",
+      imgUrl: "kiang-github/img/sunshine.png",
       title: "2016立法委員政治獻金地圖",
       link: "https://kiang.github.io/sunshine.cy.gov.tw/",
     },
@@ -1018,7 +1018,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/taipower_feeder.png",
+      imgUrl: "kiang-github/img/taipower_feeder.png",
       title: "再生能源可併網容量",
       link: "https://kiang.github.io/taipower_feeder/",
     },
@@ -1026,7 +1026,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/taiwater.png",
+      imgUrl: "kiang-github/img/taiwater.png",
       title: "2016台水用水地圖",
       link: "https://kiang.github.io/taiwater/",
     },
@@ -1034,7 +1034,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/factory_data.png",
+      imgUrl: "kiang-github/img/factory_data.png",
       title: "臨登工廠地圖",
       link: "https://kiang.github.io/factory_data/",
     },
@@ -1042,7 +1042,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/pub_lands.png",
+      imgUrl: "kiang-github/img/pub_lands.png",
       title: "台灣公有土地地圖",
       link: "https://kiang.github.io/pub_lands/",
     },
@@ -1050,7 +1050,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/taisugar_lands.png",
+      imgUrl: "kiang-github/img/taisugar_lands.png",
       title: "台灣糖業公司 可供出租土地資訊",
       link: "https://kiang.github.io/taisugar_lands/",
     },
@@ -1058,7 +1058,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_basecode.png",
+      imgUrl: "kiang-github/img/tainan_basecode.png",
       title: "台南市先進運輸系統路線圖",
       link: "https://kiang.github.io/tainan_basecode/",
     },
@@ -1072,7 +1072,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_basecode_water.png",
+      imgUrl: "kiang-github/img/tainan_basecode_water.png",
       title: "台南市淹水潛勢圖",
       link: "https://kiang.github.io/tainan_basecode/water/",
     },
@@ -1086,7 +1086,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_basecode_cunli.png",
+      imgUrl: "kiang-github/img/tainan_basecode_cunli.png",
       title: "台南市里鄰編組及調整地圖",
       link: "https://kiang.github.io/tainan_basecode/cunli/",
     },
@@ -1094,7 +1094,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_basecode_labor.png",
+      imgUrl: "kiang-github/img/tainan_basecode_labor.png",
       title: "台南市違反勞動基準法事業單位地圖",
       link: "https://kiang.github.io/tainan_basecode/labor/",
     },
@@ -1102,7 +1102,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/parks.png",
+      imgUrl: "kiang-github/img/parks.png",
       title: "台南也要特色公園",
       link: "https://parks.olc.tw/",
     },
@@ -1110,7 +1110,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_basecode_house.png",
+      imgUrl: "kiang-github/img/tainan_basecode_house.png",
       title: "台南市優先拆除違建地圖",
       link: "https://kiang.github.io/tainan_basecode/house/",
     },
@@ -1118,7 +1118,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/factory_map.png",
+      imgUrl: "kiang-github/img/factory_map.png",
       title: "各縣市農地工廠",
       link: "https://kiang.github.io/factory_map/",
     },
@@ -1126,7 +1126,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/faults.png",
+      imgUrl: "kiang-github/img/faults.png",
       title: "台灣強震高風險區域人口統計",
       link: "https://kiang.github.io/faults/",
     },
@@ -1134,7 +1134,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/gsa.png",
+      imgUrl: "kiang-github/img/gsa.png",
       title: "台灣地質敏感區",
       link: "https://kiang.github.io/gsa/",
     },
@@ -1142,7 +1142,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/cunli_dashboard.png",
+      imgUrl: "kiang-github/img/cunli_dashboard.png",
       title: "村里儀表板",
       link: "https://kiang.github.io/cunli_dashboard/",
     },
@@ -1150,7 +1150,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/erdb.png",
+      imgUrl: "kiang-github/img/erdb.png",
       title: "測站空氣品質季平均統計圖",
       link: "https://kiang.github.io/erdb/",
     },
@@ -1158,7 +1158,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/wetland.jpg",
+      imgUrl: "kiang-github/img/wetland.jpg",
       title: "台南溼地與漁電共生地圖",
       link: "https://kiang.github.io/tainan_basecode/wetland/",
     },
@@ -1166,7 +1166,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/ovitrap.jpg",
+      imgUrl: "kiang-github/img/ovitrap.jpg",
       title: "病媒蚊監控採樣數據地圖",
       link: "https://kiang.github.io/ovitrap/",
     },
@@ -1174,7 +1174,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/2019-nCoV.png",
+      imgUrl: "kiang-github/img/2019-nCoV.png",
       title: "2019-nCoV | 武漢肺炎地圖",
       link: "https://kiang.github.io/2019-nCoV/",
     },
@@ -1182,7 +1182,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tw_people_flow.png",
+      imgUrl: "kiang-github/img/tw_people_flow.png",
       title: "台灣人流地圖",
       link: "https://kiang.github.io/tw_people_flow/",
     },
@@ -1190,7 +1190,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tncc.png",
+      imgUrl: "kiang-github/img/tncc.png",
       title: "台南市議員觀測中心",
       link: "http://k.olc.tw/tncc/",
     },
@@ -1198,7 +1198,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/covid19-border-controls.png",
+      imgUrl: "kiang-github/img/covid19-border-controls.png",
       title: "Covid19 Border Controls Map",
       link: "https://kiang.github.io/covid19-border-controls/",
     },
@@ -1206,7 +1206,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/vote2022.png",
+      imgUrl: "kiang-github/img/vote2022.png",
       title: "2022 議員選舉",
       link: "https://kiang.github.io/vote2022/",
     },
@@ -1214,7 +1214,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tree.png",
+      imgUrl: "kiang-github/img/tree.png",
       title: "臺灣好植地",
       link: "https://kiang.github.io/tree/",
     },
@@ -1222,7 +1222,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/TainanWaterMap.png",
+      imgUrl: "kiang-github/img/TainanWaterMap.png",
       title: "台南區域排水狀態",
       link: "https://kiang.github.io/TainanWaterMap/",
     },
@@ -1230,7 +1230,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/foundations.png",
+      imgUrl: "kiang-github/img/foundations.png",
       title: "社團 / 財團法人資料檢索",
       link: "http://foundations.olc.tw/",
     },
@@ -1238,7 +1238,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/travel.png",
+      imgUrl: "kiang-github/img/travel.png",
       title: "就愛玩",
       link: "http://travel.olc.tw/",
     },
@@ -1246,7 +1246,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_preschool.png",
+      imgUrl: "kiang-github/img/tainan_preschool.png",
       title: "臺南市110學年度公立幼兒園地圖",
       link: "https://kiang.github.io/tainan_basecode/preschool/",
     },
@@ -1254,7 +1254,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/npa_tma.png",
+      imgUrl: "kiang-github/img/npa_tma.png",
       title: "國內交通事故通報",
       link: "https://www.facebook.com/k.olc.tw/posts/1768553963318059",
     },
@@ -1262,7 +1262,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/NPA_TMA.png",
+      imgUrl: "kiang-github/img/NPA_TMA.png",
       title: "交通事故地圖",
       link: "https://kiang.github.io/NPA_TMA/",
     },
@@ -1277,7 +1277,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_narrow_roads.png",
+      imgUrl: "kiang-github/img/tainan_narrow_roads.png",
       title: "台南狹小巷道火災搶救不易巷道地圖",
       link: "https://kiang.github.io/tainan_basecode/narrow_roads/",
     },
@@ -1285,7 +1285,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/religions.png",
+      imgUrl: "kiang-github/img/religions.png",
       title: "台灣宗教地圖",
       link: "https://kiang.github.io/religions/",
     },
@@ -1293,7 +1293,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/afterschools.png",
+      imgUrl: "kiang-github/img/afterschools.png",
       title: "台灣短期補習班地圖",
       link: "https://kiang.github.io/afterschools/",
     },
@@ -1301,7 +1301,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/drugs.png",
+      imgUrl: "kiang-github/img/drugs.png",
       title: "藥要看",
       link: "http://drugs.olc.tw/",
     },
@@ -1315,7 +1315,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/school_tree.png",
+      imgUrl: "kiang-github/img/school_tree.png",
       title: "校樹地圖",
       link: "https://kiang.github.io/school_tree/",
     },
@@ -1323,7 +1323,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/tainan_1999_map.png",
+      imgUrl: "kiang-github/img/tainan_1999_map.png",
       title: "台南1999地圖",
       link: "https://kiang.github.io/tainan_1999_map/",
     },
@@ -1331,7 +1331,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/referendums2021.png",
+      imgUrl: "kiang-github/img/referendums2021.png",
       title: "2021 公民投票村里地圖",
       link: "https://kiang.github.io/referendums2021/",
     },
@@ -1339,7 +1339,7 @@ export const githubWorksData = [
   },
   {
     portfolio: {
-      imgUrl: "img/thb-traffic.png",
+      imgUrl: "kiang-github/img/thb-traffic.png",
       title: "公路交通量調查統計地圖",
       link: "https://kiang.github.io/thb-traffic/",
     },

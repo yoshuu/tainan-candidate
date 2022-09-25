@@ -1,4 +1,4 @@
-import { pastSpeechData } from "./speechData.js";
+import { pastSpeechData } from "./speech-record-data.js";
 
 const copyPastSpeechData = JSON.parse(JSON.stringify(pastSpeechData));
 const speechContainer = document.querySelector(".speech-record-container");
