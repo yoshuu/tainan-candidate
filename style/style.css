@@ -617,12 +617,8 @@ body {
 .candidate {
   position: relative;
   display: flex;
-}
-@media (min-width: 992px) {
-  .candidate {
-    justify-content: space-around;
-    flex-direction: row;
-  }
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .candidate-image {

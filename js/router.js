@@ -1,13 +1,13 @@
 const page = document.querySelectorAll(".page");
-const page1 = document.querySelector(".front-page");
-const page2 = document.querySelector(".district-map-page");
-const page3 = document.querySelector(".record-of-street-map-page");
-const page4 = document.querySelector(".past-record-page");
-const page5 = document.querySelector(".tainan-three-page");
+const page1 = document.querySelector(".front-page-router");
+const page2 = document.querySelector(".district-map-page-router");
+const page3 = document.querySelector(".record-of-street-map-page-router");
+const page4 = document.querySelector(".past-record-page-router");
+const page5 = document.querySelector(".tainan-three-page-router");
 
 // 過往紀錄的另外兩個頁面
-const page6 = document.querySelector(".past-works-page");
-const page7 = document.querySelector(".related-news-page");
+const page6 = document.querySelector(".past-works-page-router");
+const page7 = document.querySelector(".related-news-page-router");
 
 changePage(location.hash);
 
