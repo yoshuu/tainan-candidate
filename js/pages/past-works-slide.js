@@ -31,8 +31,3 @@ function renderPastWorks(pastWorksArray, pastWorksContainer) {
 }
 
 renderPastWorks(copyGithubWorksData, pastWorksContainer);
-
-// masonry
-$(".past-works").masonry({
-  itemSelector: ".project",
-});

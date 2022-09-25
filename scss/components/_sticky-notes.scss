@@ -63,8 +63,8 @@
           display: grid;
           grid-template-columns: 2fr 2fr 1fr 3fr;
           align-items: center;
+          border-bottom: white 1px solid;
           padding: 20px 0;
-          border-bottom: #0000001a 1px solid;
           gap: 30px;
 
           .resources-content {

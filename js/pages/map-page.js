@@ -1,9 +1,21 @@
-const iframe = document.querySelector(".map-iframe");
-const instruct = document.querySelector(".instruct-sign");
+const districtIframe = document.querySelector(".district-map-iframe");
+const districtInstruct = document.querySelector(".district-instruct-sign");
 
-iframe.addEventListener("mouseenter", function (e) {
-  instruct.style.animationDuration = "0s";
+const streetIframe = document.querySelector(".street-map-iframe");
+const streetInstruct = document.querySelector(".street-instruct-sign");
+
+districtIframe.addEventListener("mouseenter", function (e) {
+  districtInstruct.style.animationDuration = "0s";
 });
-iframe.addEventListener("mouseleave", function (e) {
-  instruct.style.animationDuration = "1s";
+
+districtIframe.addEventListener("mouseleave", function (e) {
+  districtInstruct.style.animationDuration = "1s";
+});
+
+streetIframe.addEventListener("mouseenter", function (e) {
+  streetInstruct.style.animationDuration = "0s";
+});
+
+streetIframe.addEventListener("mouseleave", function (e) {
+  streetInstruct.style.animationDuration = "1s";
 });

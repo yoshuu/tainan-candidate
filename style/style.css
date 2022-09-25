@@ -278,8 +278,8 @@ dialog {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 3fr;
     align-items: center;
+    border-bottom: white 1px solid;
     padding: 20px 0;
-    border-bottom: rgba(0, 0, 0, 0.1019607843) 1px solid;
     gap: 30px;
   }
   .sticky-notes .speech-record-desktop .speech-record-content .resources-content {
@@ -675,7 +675,7 @@ body {
 .tainan-container {
   position: relative;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1920px) {
   .tainan-container {
     height: calc(100vh - 77px);
   }
@@ -687,22 +687,17 @@ body {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  transform: translateY(40px);
+  transform: translateY(1.8%);
 }
 @media (min-width: 992px) {
   .tainan-three {
-    transform: translateY(100px);
-  }
-}
-@media (min-width: 1280px) {
-  .tainan-three {
+    transform: translateY(16.8%);
     overflow: initial;
-    transform: translateY(103px);
   }
 }
 @media (min-width: 1920px) {
   .tainan-three {
-    transform: translateY(27px);
+    transform: translateY(1.8%);
   }
 }
 .tainan-three .tainan-three-img {
@@ -730,8 +725,14 @@ body {
 }
 
 .kiang-name {
-  top: 70%;
-  left: 73%;
+  top: 75%;
+  left: 78%;
+}
+@media (min-width: 992px) {
+  .kiang-name {
+    top: 70%;
+    left: 73%;
+  }
 }
 .kiang-name img {
   width: 70%;
@@ -751,10 +752,10 @@ body {
 }
 
 .kuo-name {
-  top: 66%;
-  left: 42%;
+  top: 70%;
+  left: 43%;
 }
-@media (min-width: 1920px) {
+@media (min-width: 992px) {
   .kuo-name {
     top: 66%;
     left: 44%;
@@ -778,8 +779,14 @@ body {
 }
 
 .ping-name {
-  top: 70%;
-  left: 13%;
+  top: 75%;
+  left: 8%;
+}
+@media (min-width: 992px) {
+  .ping-name {
+    top: 70%;
+    left: 13%;
+  }
 }
 .ping-name img {
   width: 40%;
@@ -800,21 +807,26 @@ body {
 
 .map-page {
   padding-top: 30px;
+  margin: auto 0;
   flex-basis: 803px;
   align-self: flex-start;
+  flex-direction: column;
 }
 @media (min-width: 1920px) {
   .map-page {
     flex-basis: 1003px;
-    padding-top: 183px;
   }
 }
-.map-page .map-container {
+.map-page .district-map-container,
+.map-page .street-map-container {
   position: relative;
   overflow: hidden;
   padding-top: 61.6322701689%;
 }
-.map-page .map-container .map-iframe {
+.map-page .district-map-container .district-map-iframe,
+.map-page .district-map-container .street-map-iframe,
+.map-page .street-map-container .district-map-iframe,
+.map-page .street-map-container .street-map-iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -823,7 +835,15 @@ body {
   border: 0;
 }
 
-.instruct-sign {
+.district-text-container {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  font-family: Noto Sans TC;
+}
+
+.district-instruct-sign,
+.street-instruct-sign {
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
