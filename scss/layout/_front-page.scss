@@ -6,13 +6,8 @@
 .candidate {
   position: relative;
   display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
-
-  @media (min-width: 992px) {
-    justify-content: space-around;
-    flex-direction: row;
-  }
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 .candidate-image {
