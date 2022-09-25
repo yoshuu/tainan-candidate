@@ -19,19 +19,19 @@ function changePage(hash) {
   page.forEach((element) => {
     element.style.display = "none";
   });
-  if (hash === "" || hash === "#front-page") {
+  if (hash === "" || hash === "#front-page-router") {
     page1.style.display = "block";
-  } else if (hash === "#district-map-page") {
+  } else if (hash === "#district-map-page-router") {
     page2.style.display = "block";
-  } else if (hash === "#record-of-street-map-page") {
+  } else if (hash === "#record-of-street-map-page-router") {
     page3.style.display = "block";
-  } else if (hash === "#past-record-page") {
+  } else if (hash === "#past-record-page-router") {
     page4.style.display = "block";
-  } else if (hash === "#tainan-three-page") {
+  } else if (hash === "#tainan-three-page-router") {
     page5.style.display = "block";
-  } else if (hash === "#past-works-page") {
+  } else if (hash === "#past-works-page-router") {
     page6.style.display = "block";
-  } else if (hash === "#related-news-page") {
+  } else if (hash === "#related-news-page-router") {
     page7.style.display = "block";
   }
 }
