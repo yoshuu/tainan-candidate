@@ -411,6 +411,7 @@ body {
   cursor: pointer;
   position: absolute;
   top: 5%;
+  right: 0;
 }
 @media (min-width: 400px) {
   .candidate-about-me-button {
