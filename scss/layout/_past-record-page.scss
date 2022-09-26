@@ -3,14 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // min-width: 375px;
+
   width: 100%;
   padding: 20px;
   gap: 41px;
 
   @media (min-width: 768px) {
-    // max-width: 1200px;
-    justify-content: center;
     flex-direction: row;
     padding: 40px;
   }
@@ -20,13 +18,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  // margin-bottom: 20px;
 
   @media (min-width: 768px) {
     flex-direction: column;
     align-self: flex-start;
     width: 233px;
-    // margin-right: 41px;
   }
   @media (min-width: 768px) {
     a + a {

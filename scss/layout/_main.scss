@@ -1,12 +1,16 @@
+%flexCenter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .district-map-page .container {
   @media (min-width: 992px) {
     height: calc(100vh - 77px);
     overflow: hidden;
   }
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flexCenter;
 }
 
 .tainan-three-page .container {
@@ -15,10 +19,7 @@
     overflow: hidden;
   }
 
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flexCenter;
 }
 
 .front-page .container {
@@ -27,10 +28,7 @@
     overflow: hidden;
   }
 
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flexCenter;
 }
 
 .record-of-street-map-page .container {
@@ -38,9 +36,5 @@
     height: calc(100vh - 77px);
     overflow: hidden;
   }
-
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flexCenter;
 }

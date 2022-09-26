@@ -2,7 +2,6 @@
 
 .map-box {
   // 1280px以上再使用absolute，以下讓他使用normal flow
-  // right: -100px;
   align-self: flex-end;
   width: 153px;
   height: 130px;
@@ -11,8 +10,6 @@
     position: absolute;
     right: -147px;
     top: 85px;
-    // width: 220px;
-    // height: 220px;
   }
 
   @media (min-width: 1920px) {
@@ -28,18 +25,12 @@
   &:hover {
     background-image: url(../../images/mapButtonHover.png);
   }
-
-  // .map-button {
-  //   display: block;
-  //   line-height: 215px;
-  // }
 }
 
 .facebook-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
   width: 242px;
   height: 41px;
   background-color: utility.$facebook;
@@ -52,9 +43,7 @@
     padding-left: 6px;
   }
   .facebook-text {
-    margin: 0;
     padding-right: 17px;
-    font-family: Noto Sans TC;
     font-size: 16px;
     font-weight: 500;
     line-height: 23.17px;

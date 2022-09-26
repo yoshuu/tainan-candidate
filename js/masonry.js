@@ -6,7 +6,7 @@ var $el = copyGithubWorksData.map((work, index) => {
   return `<div class="project" data-key='work-${index}'>
                       <img class="project-img" src="${work.portfolio.imgUrl}" />
                       <div class="project-content">
-                        <a href='${work.portfolio.link}' class="theme">
+                        <a href='${work.portfolio.link}' class="theme" target="_blank">
                           <h3>${work.portfolio.title}</h3>
                     
                           <img src="../images/github-icon.png" />
@@ -25,15 +25,3 @@ var $el = copyGithubWorksData.map((work, index) => {
                       </div>`;
 });
 $(".past-works").append($el);
-
-console.log("append");
-
-// $(".past-works").masonry({
-//   itemSelector: ".project",
-// });
-// $(".past-works").masonry("destroy");
-// $(".past-works").removeData("masonry");
-// $(".past-works").masonry();
-
-// $(".past-works").imagesLoaded(function () {
-// });
