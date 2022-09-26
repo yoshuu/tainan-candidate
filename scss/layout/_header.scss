@@ -1,74 +1,87 @@
 @use "../utility";
 
-.navbar-laptop {
-  display: none;
-  @media (min-width: 992px) {
-    display: flex;
-  }
-}
+header {
+  // 一起的設定
+  background-color: utility.$header;
 
-.navbar-mobile {
-  display: block;
-  @media (min-width: 992px) {
-    display: none;
-  }
-  .brand-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .navbar-nav {
-    flex-direction: row;
-    overflow: auto;
-    .nav-item {
-      flex-shrink: 0;
+  .container .navbar-nav .nav-link {
+    font-family: Noto Sans TC;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+    padding: 5px 15px;
+
+    &:hover {
+      background-color: #30363a;
+      color: white;
+    }
+
+    @media (min-width: 992px) {
+      padding: 15px 20px;
+      font-size: 18px;
     }
   }
-}
-
-header .container .navbar {
-  background-color: utility.$header;
-  padding: 10px 43px;
-}
-.navbar-collapse {
-  justify-content: end;
-}
-
-.navbar-brand {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  height: 56px;
-
-  img {
-    object-fit: contain;
-    height: 100%;
-  }
-}
-.candidate-logo {
-  width: 130px;
-}
-.party-logo {
-  @media (min-width: 992px) {
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
     display: inline-block;
-  }
-}
-.container .navbar-expand-lg .navbar-nav .nav-link {
-  font-family: Noto Sans TC;
-  font-weight: 700;
-  font-size: 14px;
-  color: black;
-  padding: 15px 20px;
+    height: 56px;
 
-  &:hover {
-    background-color: #30363a;
-    color: white;
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
+
+    .candidate-logo {
+      width: 130px;
+    }
+
+    .party-logo {
+      @media (min-width: 992px) {
+        display: inline-block;
+      }
+    }
   }
 
-  @media (min-width: 1024px) {
-    font-size: 18px;
-  }
-}
+  // 桌機的設定
+  .navbar-desktop {
+    display: none;
+    @media (min-width: 992px) {
+      display: flex;
+    }
 
-header {
-  background-color: utility.$header;
+    background-color: utility.$header;
+    padding: 10px 43px;
+
+    .navbar-collapse {
+      justify-content: end;
+    }
+  }
+
+  // 手機的設定
+  .navbar-mobile {
+    display: block;
+    @media (min-width: 992px) {
+      display: none;
+    }
+
+    &.navbar {
+      padding: 0;
+    }
+
+    .brand-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 15px;
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+      overflow: auto;
+
+      .nav-item {
+        flex-shrink: 0;
+      }
+    }
+  }
 }

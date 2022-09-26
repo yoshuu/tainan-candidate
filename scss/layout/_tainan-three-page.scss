@@ -2,7 +2,7 @@
 
 .tainan-container {
   position: relative;
-  @media (min-width: 1280px) {
+  @media (min-width: 1920px) {
     height: calc(100vh - 77px);
     // overflow: hidden;
     // height: calc(980px + 48px);
@@ -19,20 +19,15 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  transform: translateY(40px);
-  // padding-top: 182px;
+  transform: translateY(1.8%);
+
   @media (min-width: 992px) {
-    transform: translateY(100px);
-  }
-  @media (min-width: 1280px) {
+    transform: translateY(16.8%);
     overflow: initial;
-    // padding-top: 48px;
-    transform: translateY(103px);
   }
 
   @media (min-width: 1920px) {
-    // padding-top: 48px;
-    transform: translateY(27px);
+    transform: translateY(1.8%);
   }
 
   .tainan-three-img {
@@ -43,10 +38,12 @@
 
     @media (min-width: 992px) {
       height: calc(100vh - 77px);
+      // height: 100%;
       width: 100%;
     }
 
     @media (min-width: 1920px) {
+      // height: calc(100vh - 77px);
       height: 100%;
       width: 100%;
     }
@@ -59,8 +56,13 @@
 }
 
 .kiang-name {
-  top: 70%;
-  left: 73%;
+  top: 75%;
+  left: 78%;
+
+  @media (min-width: 992px) {
+    top: 70%;
+    left: 73%;
+  }
   img {
     width: 70%;
     height: 70%;
@@ -76,10 +78,10 @@
 }
 
 .kuo-name {
-  top: 66%;
-  left: 42%;
+  top: 70%;
+  left: 43%;
 
-  @media (min-width: 1920px) {
+  @media (min-width: 992px) {
     top: 66%;
     left: 44%;
   }
@@ -98,8 +100,13 @@
 }
 
 .ping-name {
-  top: 70%;
-  left: 13%;
+  top: 75%;
+  left: 8%;
+
+  @media (min-width: 992px) {
+    top: 70%;
+    left: 13%;
+  }
   img {
     width: 40%;
     height: 40%;
