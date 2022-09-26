@@ -263,7 +263,6 @@ dialog {
   }
   .sticky-notes .speech-record-topic h3 {
     font-size: 16px;
-    font-family: Noto Sans TC;
     font-weight: 700;
   }
 }
@@ -302,7 +301,6 @@ dialog {
 }
 .sticky-notes .speech-record-mobile h3 {
   font-size: 14px;
-  font-family: Noto Sans TC;
   font-weight: 700;
 }
 .sticky-notes .speech-record-mobile .speech-record-topicNcontent {
@@ -345,11 +343,7 @@ dialog {
   font-size: 14px;
   font-weight: 500;
 }
-.sticky-notes .past-works-container {
-  display: flex;
-  flex-direction: column;
-}
-.sticky-notes .past-works-container .project {
+.sticky-notes .past-works .project {
   margin-bottom: 10px;
   width: 100%;
   background-color: #fff;
@@ -357,7 +351,7 @@ dialog {
   margin-bottom: 21px;
 }
 @media (min-width: 992px) {
-  .sticky-notes .past-works-container .project {
+  .sticky-notes .past-works .project {
     width: 40%;
     border-radius: 5px;
     margin: 0 5% 40px 5%;
@@ -365,7 +359,7 @@ dialog {
   }
 }
 @media (min-width: 1232px) {
-  .sticky-notes .past-works-container .project {
+  .sticky-notes .past-works .project {
     width: 31.3%;
     float: left;
     border-radius: 5px;
@@ -373,44 +367,44 @@ dialog {
     margin: 0 1% 40px 1%;
   }
 }
-.sticky-notes .past-works-container .project .project-img {
+.sticky-notes .past-works .project .project-img {
   width: 100%;
 }
-.sticky-notes .past-works-container .project .project-content {
+.sticky-notes .past-works .project .project-content {
   padding: 16px;
 }
-.sticky-notes .past-works-container .project .project-content .theme {
+.sticky-notes .past-works .project .project-content .theme {
   display: flex;
   align-items: center;
 }
-.sticky-notes .past-works-container .project .project-content .theme h3 {
+.sticky-notes .past-works .project .project-content .theme h3 {
   font-size: 16px;
   font-weight: 500;
   color: #0275d8;
 }
-.sticky-notes .past-works-container .project .project-content .theme img {
+.sticky-notes .past-works .project .project-content .theme img {
   width: 17px;
   height: 15px;
   margin-left: 3px;
 }
-.sticky-notes .past-works-container .project .project-content .bottom-line {
+.sticky-notes .past-works .project .project-content .bottom-line {
   width: 100%;
   height: 1px;
   margin-top: 8px;
   background-color: #d9d9d9;
 }
-.sticky-notes .past-works-container .project .project-content .news-title {
+.sticky-notes .past-works .project .project-content .news-title {
   margin: 8px 0;
   font-size: 14px;
   font-weight: 400;
   color: #666;
 }
-.sticky-notes .past-works-container .project .project-content .news-box {
+.sticky-notes .past-works .project .project-content .news-box {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-.sticky-notes .past-works-container .project .project-content .news-box .news-item {
+.sticky-notes .past-works .project .project-content .news-box .news-item {
   padding: 8px 15px;
   font-size: 14px;
   font-weight: 400;
@@ -465,9 +459,6 @@ dialog {
 }
 .sticky-notes .related-news-container .news-item:hover {
   background-color: #50a5a4;
-}
-.sticky-notes .related-news-container .news-item p {
-  margin: 0;
 }
 .sticky-notes .related-news-container .news-item span {
   display: block;
