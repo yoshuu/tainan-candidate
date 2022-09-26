@@ -67,17 +67,24 @@
     @media (min-width: 1024px) {
       background-color: #fff;
     }
-
-    .people {
-      width: 200px;
-      height: 195px;
-      float: left;
-      margin-right: 16px;
+    .people-img-container {
+      text-align: center;
+      img {
+        width: 200px;
+        height: 195px;
+        @media (min-width: 992px) {
+          float: left;
+          margin-right: 16px;
+        }
+      }
     }
 
     h3 {
-      margin-bottom: 16px;
-      font-size: 24px;
+      margin: 10px 0;
+      @media (min-width: 992px) {
+        margin-bottom: 16px;
+        font-size: 24px;
+      }
     }
 
     p {
@@ -95,6 +102,12 @@ dialog {
   padding: 0;
   border: 1px solid transparent;
   overflow: scroll;
+
+  .content {
+    h2 {
+      margin: 10px 0;
+    }
+  }
 }
 
 .street-speech {

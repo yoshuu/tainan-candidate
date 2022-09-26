@@ -1,3 +1,4 @@
+// import { appendProject } from "./masonry.js";
 const page = document.querySelectorAll(".page");
 const page1 = document.querySelector(".front-page-router");
 const page2 = document.querySelector(".district-map-page-router");
@@ -15,7 +16,7 @@ window.addEventListener("hashchange", function () {
   changePage(location.hash);
 });
 
-function changePage(hash) {
+async function changePage(hash) {
   page.forEach((element) => {
     element.style.display = "none";
   });
@@ -31,11 +32,13 @@ function changePage(hash) {
     page5.style.display = "block";
   } else if (hash === "#past-works-page-router") {
     page6.style.display = "block";
-    console.dir(page6.innerHTML);
-    $(".past-works").masonry();
-    // setTimeout(() => {
-    //   $(".past-works").masonry();
-    // }, 100);
+    console.log("before append project");
+    // await appendProject();
+    console.log("before masonry");
+    // $(".past-works").masonry();
+    setTimeout(() => {
+      $(".past-works").masonry();
+    }, 500);
   } else if (hash === "#related-news-page-router") {
     page7.style.display = "block";
   }

@@ -13,6 +13,7 @@
 }
 
 .tainan-three {
+  margin-top: 50px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -21,6 +22,7 @@
   transform: translateY(1.8%);
 
   @media (min-width: 992px) {
+    margin-top: 0;
     transform: translateY(16.8%);
     overflow: initial;
   }
