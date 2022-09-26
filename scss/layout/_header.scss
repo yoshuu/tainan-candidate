@@ -5,7 +5,6 @@ header {
   background-color: utility.$header;
 
   .container .navbar-nav .nav-link {
-    font-family: Noto Sans TC;
     font-weight: 700;
     font-size: 14px;
     color: black;
@@ -51,7 +50,7 @@ header {
     }
 
     background-color: utility.$header;
-    padding: 10px 43px;
+    padding: 10px 40px;
 
     .navbar-collapse {
       justify-content: end;

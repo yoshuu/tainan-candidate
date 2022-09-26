@@ -1,16 +1,15 @@
 @use "../utility";
 
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 .tainan-container {
   position: relative;
   @media (min-width: 1920px) {
     height: calc(100vh - 77px);
-    // overflow: hidden;
-    // height: calc(980px + 48px);
   }
-
-  // @media (min-width: 1920px) {
-  //   height: calc(100vh - 48px);
-  // }
 }
 
 .tainan-three {
@@ -33,19 +32,15 @@
   .tainan-three-img {
     object-fit: contain;
     align-self: center;
-    height: 120%;
-    width: 120%;
+
+    @include size(120%, 120%);
 
     @media (min-width: 992px) {
-      height: calc(100vh - 77px);
-      // height: 100%;
-      width: 100%;
+      @include size(100%, calc(100vh - 77px));
     }
 
     @media (min-width: 1920px) {
-      // height: calc(100vh - 77px);
-      height: 100%;
-      width: 100%;
+      @include size(100%, 100%);
     }
   }
 }
@@ -64,15 +59,9 @@
     left: 73%;
   }
   img {
-    width: 70%;
-    height: 70%;
-    @media (min-width: 576px) {
-      width: 70%;
-      height: 70%;
-    }
+    @include size(65%, 65%);
     @media (min-width: 1920px) {
-      width: 90%;
-      height: 90%;
+      @include size(90%, 90%);
     }
   }
 }
@@ -86,15 +75,12 @@
     left: 44%;
   }
   img {
-    width: 40%;
-    height: 40%;
+    @include size(40%, 40%);
     @media (min-width: 576px) {
-      width: 70%;
-      height: 70%;
+      @include size(65%, 65%);
     }
     @media (min-width: 1920px) {
-      width: 90%;
-      height: 90%;
+      @include size(90%, 90%);
     }
   }
 }
@@ -108,15 +94,12 @@
     left: 13%;
   }
   img {
-    width: 40%;
-    height: 40%;
+    @include size(40%, 40%);
     @media (min-width: 576px) {
-      width: 70%;
-      height: 70%;
+      @include size(70%, 70%);
     }
     @media (min-width: 1920px) {
-      width: 90%;
-      height: 90%;
+      @include size(90%, 90%);
     }
   }
 }

@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  margin: 0 40px;
 }
 
 .candidate-image {
@@ -31,8 +32,6 @@
     display: block;
     align-self: center;
     flex-basis: 880px;
-    // height: calc(100vh - 200px);
-    // overflow: scroll;
   }
   @media (min-width: 1920px) {
     height: initial;
@@ -48,10 +47,6 @@
   @media (min-width: 400px) {
     left: 235px;
   }
-
-  // @media (min-width: 500px) {
-  //   left: 300px;
-  // }
 
   img {
     width: 100%;
