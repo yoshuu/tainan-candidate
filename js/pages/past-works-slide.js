@@ -13,7 +13,7 @@ function renderPastWorks(pastWorksArray, pastWorksContainer) {
                       <div class="project-content">
                         <a href='${work.portfolio.link}' class="theme">
                           <h3>${work.portfolio.title}</h3>
-                          <img src="./images/github-icon.png" />
+                          <img src="../images/github-icon.png" />
                         </a>
                         <div class="bottom-line"></div>
                         <div class="news-title">相關報導</div>

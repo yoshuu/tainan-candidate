@@ -31,6 +31,9 @@ function changePage(hash) {
     page5.style.display = "block";
   } else if (hash === "#past-works-page-router") {
     page6.style.display = "block";
+    setTimeout(() => {
+      $(".past-works").masonry();
+    }, 100);
   } else if (hash === "#related-news-page-router") {
     page7.style.display = "block";
   }
