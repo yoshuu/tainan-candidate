@@ -8,7 +8,11 @@
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin: 0 40px;
+  margin: 0 15px;
+
+  @media (min-width: 992px) {
+    margin: 0 40px;
+  }
 }
 
 .candidate-image {
@@ -41,11 +45,14 @@
   cursor: pointer;
   position: absolute;
   // button會因為畫面小距離不變的話會消失
-  left: 170px;
-  top: 50px;
+  // left: 170px;
+  // top: 50px;
+
+  top: 5%;
 
   @media (min-width: 400px) {
-    left: 235px;
+    right: 0;
+    top: 10%;
   }
 
   img {

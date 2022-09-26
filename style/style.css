@@ -32,16 +32,16 @@ h3 {
 @media (min-width: 1280px) {
   .map-box {
     position: absolute;
-    right: -147px;
-    top: 85px;
+    right: -21%;
+    top: 10%;
   }
 }
 @media (min-width: 1920px) {
   .map-box {
     width: 245px;
     height: 215px;
-    right: -250px;
-    top: 141px;
+    right: -21%;
+    top: 10%;
   }
 }
 .map-box:hover {
@@ -368,7 +368,12 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin: 0 40px;
+  margin: 0 15px;
+}
+@media (min-width: 992px) {
+  .candidate {
+    margin: 0 40px;
+  }
 }
 
 .candidate-image {
@@ -405,12 +410,12 @@ body {
 .candidate-about-me-button {
   cursor: pointer;
   position: absolute;
-  left: 170px;
-  top: 50px;
+  top: 5%;
 }
 @media (min-width: 400px) {
   .candidate-about-me-button {
-    left: 235px;
+    right: 0;
+    top: 10%;
   }
 }
 .candidate-about-me-button img {
