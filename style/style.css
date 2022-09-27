@@ -593,6 +593,20 @@ body {
   overflow: hidden;
   transform: translateY(1.8%);
 }
+@keyframes bounceName {
+  from {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(-3px);
+    animation-timing-function: ease-in;
+  }
+  to {
+    transform: translateY(0px);
+    animation-timing-function: ease-in-out;
+  }
+}
 @media (min-width: 992px) {
   .tainan-three {
     margin-top: 0;
@@ -627,6 +641,9 @@ body {
 .people-name {
   position: absolute;
   cursor: pointer;
+  animation-name: bounceName;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .kiang-name {
