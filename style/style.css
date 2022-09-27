@@ -119,124 +119,254 @@ h3 {
   font-size: 16px;
 }
 
-.popuping {
-  width: 760px;
-}
-.popuping header {
-  height: 60px;
-  background-color: #e3eaea;
-  position: relative;
-}
-@media (min-width: 1024px) {
-  .popuping header {
-    background-color: #8dc1c7;
-  }
-}
-.popuping header h2 {
-  color: white;
-  font-size: 0;
-  font-weight: 500;
-  text-align: center;
-  height: 60px;
-  line-height: 60px;
-}
-@media (min-width: 1024px) {
-  .popuping header h2 {
-    font-size: 16px;
-  }
-}
-.popuping button {
-  border: 1px solid transparent;
-  background-color: transparent;
-}
-.popuping button:focus-visible {
-  outline: 1px solid transparent;
-}
-.popuping .close {
-  width: 20px;
-  height: 20px;
-  background-image: url("../../images/black-cross.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-@media (min-width: 1024px) {
-  .popuping .close {
-    background-image: url("../../images/Vector.png");
-  }
-}
-.popuping .close--black {
-  width: 20px;
-  height: 20px;
-  background-image: url("../../images/black-cross.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-.popuping main {
-  padding: 20px 40px;
-  background-color: #e3eaea;
-}
-@media (min-width: 1024px) {
-  .popuping main {
-    background-color: #fff;
-  }
-}
-.popuping main .people-img-container {
-  text-align: center;
-}
-.popuping main .people-img-container img {
-  width: 200px;
-  height: 195px;
-}
-@media (min-width: 992px) {
-  .popuping main .people-img-container img {
-    float: left;
-    margin-right: 16px;
-  }
-}
-.popuping main h3 {
-  margin: 10px 0;
-}
-@media (min-width: 992px) {
-  .popuping main h3 {
-    margin-bottom: 16px;
-    font-size: 24px;
-  }
-}
-.popuping main p {
-  line-height: 21.27px;
-  font-size: 14px;
-}
-.popuping main .facebook-button {
-  margin-left: 219px;
-}
-
 dialog {
   padding: 0;
   border: 1px solid transparent;
   overflow: scroll;
 }
-dialog .content h2 {
+dialog .popuping {
+  width: 760px;
+}
+dialog .popuping header {
+  position: relative;
+  height: 60px;
+  background-color: #8dc1c7;
+}
+dialog .popuping header h2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 60px;
+  color: white;
+}
+dialog .popuping main {
+  background-color: #fff;
+  padding: 20px 40px;
+}
+dialog .popuping main .people-img-container {
+  text-align: center;
+}
+dialog .popuping main .people-img-container img {
+  float: left;
+  margin-right: 16px;
+}
+dialog .popuping main h3 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+dialog .popuping main p {
+  line-height: 21.27px;
+  font-size: 14px;
+}
+dialog .popuping button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+dialog .popuping button:focus-visible {
+  outline: 1px solid transparent;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/black-cross.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 992px) {
+  .close {
+    background-image: url("../../images/Vector.png");
+  }
+}
+.close--black {
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/black-cross.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.candidate .modal-content,
+.kiang-dialog .modal-content,
+.kuo-dialog .modal-content,
+.ping-dialog .modal-content {
+  border-radius: 0;
+}
+.candidate .modal-laptop,
+.kiang-dialog .modal-laptop,
+.kuo-dialog .modal-laptop,
+.ping-dialog .modal-laptop {
+  display: none;
+}
+@media (min-width: 992px) {
+  .candidate .modal-laptop,
+.kiang-dialog .modal-laptop,
+.kuo-dialog .modal-laptop,
+.ping-dialog .modal-laptop {
+    display: block;
+  }
+  .candidate .modal-laptop .modal-content .modal-header,
+.kiang-dialog .modal-laptop .modal-content .modal-header,
+.kuo-dialog .modal-laptop .modal-content .modal-header,
+.ping-dialog .modal-laptop .modal-content .modal-header {
+    border-radius: 0;
+    position: relative;
+    height: 60px;
+    background-color: #8dc1c7;
+  }
+  .candidate .modal-laptop .modal-content .modal-header h2,
+.kiang-dialog .modal-laptop .modal-content .modal-header h2,
+.kuo-dialog .modal-laptop .modal-content .modal-header h2,
+.ping-dialog .modal-laptop .modal-content .modal-header h2 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+  }
+  .candidate .modal-laptop .modal-content .modal-header button,
+.kiang-dialog .modal-laptop .modal-content .modal-header button,
+.kuo-dialog .modal-laptop .modal-content .modal-header button,
+.ping-dialog .modal-laptop .modal-content .modal-header button {
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+  .candidate .modal-laptop .modal-content .modal-header button:focus-visible,
+.kiang-dialog .modal-laptop .modal-content .modal-header button:focus-visible,
+.kuo-dialog .modal-laptop .modal-content .modal-header button:focus-visible,
+.ping-dialog .modal-laptop .modal-content .modal-header button:focus-visible {
+    outline: 1px solid transparent;
+  }
+  .candidate .modal-laptop .modal-content .modal-body,
+.kiang-dialog .modal-laptop .modal-content .modal-body,
+.kuo-dialog .modal-laptop .modal-content .modal-body,
+.ping-dialog .modal-laptop .modal-content .modal-body {
+    background-color: #fff;
+    padding: 20px 40px;
+  }
+  .candidate .modal-laptop .modal-content .modal-body .people-img-container img,
+.kiang-dialog .modal-laptop .modal-content .modal-body .people-img-container img,
+.kuo-dialog .modal-laptop .modal-content .modal-body .people-img-container img,
+.ping-dialog .modal-laptop .modal-content .modal-body .people-img-container img {
+    float: left;
+    margin-right: 16px;
+  }
+  .candidate .modal-laptop .modal-content .modal-body h3,
+.kiang-dialog .modal-laptop .modal-content .modal-body h3,
+.kuo-dialog .modal-laptop .modal-content .modal-body h3,
+.ping-dialog .modal-laptop .modal-content .modal-body h3 {
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+  .candidate .modal-laptop .modal-content .modal-body p,
+.kiang-dialog .modal-laptop .modal-content .modal-body p,
+.kuo-dialog .modal-laptop .modal-content .modal-body p,
+.ping-dialog .modal-laptop .modal-content .modal-body p {
+    line-height: 21.27px;
+    font-size: 14px;
+  }
+  .candidate .modal-laptop .modal-content .modal-body .facebook-container,
+.kiang-dialog .modal-laptop .modal-content .modal-body .facebook-container,
+.kuo-dialog .modal-laptop .modal-content .modal-body .facebook-container,
+.ping-dialog .modal-laptop .modal-content .modal-body .facebook-container {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+.candidate .modal-mobile .modal-content,
+.kiang-dialog .modal-mobile .modal-content,
+.kuo-dialog .modal-mobile .modal-content,
+.ping-dialog .modal-mobile .modal-content {
+  background-color: #e3eaea;
+  border-radius: 0;
+}
+.candidate .modal-mobile .modal-content .modal-header,
+.kiang-dialog .modal-mobile .modal-content .modal-header,
+.kuo-dialog .modal-mobile .modal-content .modal-header,
+.ping-dialog .modal-mobile .modal-content .modal-header {
+  padding: 10px 20px;
+}
+.candidate .modal-mobile .modal-content .modal-header button,
+.kiang-dialog .modal-mobile .modal-content .modal-header button,
+.kuo-dialog .modal-mobile .modal-content .modal-header button,
+.ping-dialog .modal-mobile .modal-content .modal-header button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.candidate .modal-mobile .modal-content .modal-header button:focus-visible,
+.kiang-dialog .modal-mobile .modal-content .modal-header button:focus-visible,
+.kuo-dialog .modal-mobile .modal-content .modal-header button:focus-visible,
+.ping-dialog .modal-mobile .modal-content .modal-header button:focus-visible {
+  outline: 1px solid transparent;
+}
+.candidate .modal-mobile .modal-content .modal-body,
+.kiang-dialog .modal-mobile .modal-content .modal-body,
+.kuo-dialog .modal-mobile .modal-content .modal-body,
+.ping-dialog .modal-mobile .modal-content .modal-body {
+  padding: 20px;
+}
+.candidate .modal-mobile .modal-content .content .people-img-container,
+.kiang-dialog .modal-mobile .modal-content .content .people-img-container,
+.kuo-dialog .modal-mobile .modal-content .content .people-img-container,
+.ping-dialog .modal-mobile .modal-content .content .people-img-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.candidate .modal-mobile .modal-content .content .people-img-container img,
+.kiang-dialog .modal-mobile .modal-content .content .people-img-container img,
+.kuo-dialog .modal-mobile .modal-content .content .people-img-container img,
+.ping-dialog .modal-mobile .modal-content .content .people-img-container img {
+  width: 150px;
+  height: 150px;
+}
+.candidate .modal-mobile .modal-content .content h2,
+.kiang-dialog .modal-mobile .modal-content .content h2,
+.kuo-dialog .modal-mobile .modal-content .content h2,
+.ping-dialog .modal-mobile .modal-content .content h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.candidate .modal-mobile .modal-content .content p,
+.kiang-dialog .modal-mobile .modal-content .content p,
+.kuo-dialog .modal-mobile .modal-content .content p,
+.ping-dialog .modal-mobile .modal-content .content p {
+  font-size: 16px;
+  line-height: 23.17px;
+}
+.candidate .modal-mobile .modal-content .content .facebook-container,
+.kiang-dialog .modal-mobile .modal-content .content .facebook-container,
+.kuo-dialog .modal-mobile .modal-content .content .facebook-container,
+.ping-dialog .modal-mobile .modal-content .content .facebook-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
   margin: 10px 0;
 }
-
-.street-speech {
-  width: 100%;
-  height: 100%;
+@media (min-width: 992px) {
+  .candidate .modal-mobile,
+.kiang-dialog .modal-mobile,
+.kuo-dialog .modal-mobile,
+.ping-dialog .modal-mobile {
+    display: none;
+  }
 }
 
-.mobile-popuping form {
-  display: flex;
-  flex-direction: column;
+.street-map-dialog .modal-body,
+.street-map-dialog .modal-header {
+  padding: 0;
 }
-.mobile-popuping header,
-.mobile-popuping main {
-  background-color: #e3eaea;
+.street-map-dialog .modal-body button,
+.street-map-dialog .modal-header button {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.street-map-dialog .modal-body button:focus-visible,
+.street-map-dialog .modal-header button:focus-visible {
+  outline: 1px solid transparent;
 }
 
 .sticky-notes {
@@ -315,11 +445,14 @@ header .navbar-mobile.navbar {
 header .navbar-mobile .brand-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 7px 12px;
 }
 header .navbar-mobile .navbar-nav {
   flex-direction: row;
   overflow: auto;
+}
+header .navbar-mobile .navbar-nav::-webkit-scrollbar {
+  display: none;
 }
 header .navbar-mobile .navbar-nav .nav-item {
   flex-shrink: 0;
@@ -425,9 +558,9 @@ body {
   cursor: pointer;
   position: absolute;
   top: 5%;
-  right: -10%;
+  right: 0;
 }
-@media (min-width: 400px) {
+@media (min-width: 390px) {
   .candidate-about-me-button {
     right: 0;
     top: 10%;
@@ -702,7 +835,12 @@ body {
 }
 
 .speech-record {
-  padding: 24px 40px;
+  padding: 14px 20px;
+}
+@media (min-width: 992px) {
+  .speech-record {
+    padding: 24px 40px;
+  }
 }
 .speech-record h2 {
   font-weight: 700;

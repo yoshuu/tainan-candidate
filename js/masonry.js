@@ -1,22 +1,19 @@
 import { githubWorksData } from "./data/past-works-data.js";
 
 const copyGithubWorksData = JSON.parse(JSON.stringify(githubWorksData));
-let finishCount = 0;
+// let finishCount = 0;
 
-function loader() {
-  finishCount++;
-  console.log("on load", finishCount);
-  return finishCount;
-}
+// function loader() {
+//   finishCount++;
+//   console.log("on load", finishCount);
+//   return finishCount;
+// }
+
 var $el = copyGithubWorksData.map((work, index) => {
   return `<div class="project" data-key='work-${index}'>
-                      <img class="project-img" src="${
-                        work.portfolio.imgUrl
-                      }" complete onLoad="${loader()}"/>
+                      <img class="project-img" src="${work.portfolio.imgUrl}"/>
                       <div class="project-content">
-                        <a href='${
-                          work.portfolio.link
-                        }' class="theme" target="_blank">
+                        <a href='${work.portfolio.link}' class="theme" target="_blank">
                           <h3>${work.portfolio.title}</h3>
                     
                           <img src="../images/github-icon.png" />
@@ -33,6 +30,7 @@ var $el = copyGithubWorksData.map((work, index) => {
                       </div>            
                       </div>`;
 });
+
 $(".past-works").append($el);
 
 // 使用照片loading

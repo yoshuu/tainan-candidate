@@ -19,3 +19,22 @@ streetIframe.addEventListener("mouseenter", function (e) {
 streetIframe.addEventListener("mouseleave", function (e) {
   streetInstruct.style.animationDuration = "1s";
 });
+
+// var clickIframe = window.setInterval(checkFocus, 0);
+// var i = 0;
+
+// function checkFocus() {
+//   if (document.activeElement == districtIframe) {
+//     window.focus();
+//     districtInstruct.style.display = "none";
+//     console.log("clicked " + i++);
+//   }
+// }
+
+// window.focus();
+// window.addEventListener("blur", function (e) {
+//   if (document.activeElement == districtIframe) {
+//     console.log("click");
+//     districtInstruct.style.display = "none";
+//   }
+// });
