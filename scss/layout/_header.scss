@@ -71,12 +71,16 @@ header {
     .brand-container {
       display: flex;
       justify-content: space-between;
-      padding: 0 15px;
+      padding: 7px 12px;
     }
 
     .navbar-nav {
       flex-direction: row;
       overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       .nav-item {
         flex-shrink: 0;

@@ -1,6 +1,10 @@
 // speech-record
 .speech-record {
-  padding: 24px 40px;
+  padding: 14px 20px;
+
+  @media (min-width: 992px) {
+    padding: 24px 40px;
+  }
 
   h2 {
     font-weight: 700;

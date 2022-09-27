@@ -8,16 +8,17 @@
 
   @media (min-width: 1280px) {
     position: absolute;
-    right: -147px;
-    top: 85px;
+    right: -21%;
+    top: 10%;
   }
 
   @media (min-width: 1920px) {
     width: 245px;
     height: 215px;
-    right: -250px;
-    top: 141px;
+    right: -21%;
+    top: 10%;
   }
+
   background-image: url(../../images/mapButton.png);
   background-size: contain;
   background-repeat: no-repeat;
