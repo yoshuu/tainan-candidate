@@ -40,10 +40,10 @@ async function changePage(hash) {
   //   console.log("before append project");
   //   // await appendProject();
   //   console.log("before masonry");
-  // $(".past-works").masonry();
-  // setTimeout(() => {
-  //   $(".past-works").masonry();
-  // }, 150);
+  $(".past-works").masonry();
+  setTimeout(() => {
+    $(".past-works").masonry();
+  }, 150);
   // } else if (hash === "#related-news-page-router") {
   //   page7.style.display = "block";
   // }
